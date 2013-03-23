@@ -27,5 +27,17 @@
     <string name="buy_message_hint">Enter your message here.</string>
     <string name="buy_message_sent">Your message has been sent. The seller will contact you if he or she wishes to arrange a transaction.</string>
     <string name="return_home">Return to Home Screen</string>
+    <string name="title_activity_sell">SellActivity</string>
+    <string name="add_book_button">Add Book</string>
+    <string name="currently_selling">Currently Selling:</string>
+    <string name="title_activity_add_book">AddBookActivity</string>
+    <string name="isbn_hint">Enter ISBN</string>
+    <string name="title_hint">Enter title</string>
+    <string name="author_hint">Enter author</string>
+    <string name="subject_hint">Enter subject</string>
+    <string name="post">Post</string>
+    <string name="title_activity_confirm_post">ConfirmPostActivity</string>
+    <string name="confirm_post">Your book has been posted.</string>
+    <string name="edit">Edit</string>
 
 </resources>

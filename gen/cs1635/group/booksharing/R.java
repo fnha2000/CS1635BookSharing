@@ -15,55 +15,74 @@ public final class R {
         public static final int ic_launcher=0x7f020001;
     }
     public static final class id {
-        public static final int ImageView05=0x7f070001;
-        public static final int TextView09=0x7f070003;
-        public static final int TextView10=0x7f070002;
-        public static final int button1=0x7f070004;
-        public static final int button_back=0x7f070010;
-        public static final int button_buy=0x7f070012;
-        public static final int button_home=0x7f070011;
-        public static final int button_send=0x7f070013;
-        public static final int editText1=0x7f070000;
-        public static final int imageView1=0x7f070005;
-        public static final int menu_settings=0x7f070014;
-        public static final int textView1=0x7f070006;
-        public static final int textView10=0x7f07000f;
-        public static final int textView2=0x7f070007;
-        public static final int textView3=0x7f070008;
-        public static final int textView4=0x7f070009;
-        public static final int textView5=0x7f07000a;
-        public static final int textView6=0x7f07000b;
-        public static final int textView7=0x7f07000c;
-        public static final int textView8=0x7f07000d;
-        public static final int textView9=0x7f07000e;
+        public static final int ImageView01=0x7f070018;
+        public static final int ImageView05=0x7f070012;
+        public static final int TextView01=0x7f070019;
+        public static final int TextView02=0x7f07001a;
+        public static final int TextView09=0x7f070014;
+        public static final int TextView10=0x7f070013;
+        public static final int button1=0x7f070015;
+        public static final int button_back=0x7f07000f;
+        public static final int button_buy=0x7f070011;
+        public static final int button_home=0x7f070010;
+        public static final int button_send=0x7f070016;
+        public static final int editText1=0x7f070004;
+        public static final int editText2=0x7f070007;
+        public static final int editText3=0x7f07000a;
+        public static final int editText4=0x7f07000d;
+        public static final int imageView1=0x7f070000;
+        public static final int menu_settings=0x7f07001b;
+        public static final int scrollView1=0x7f070017;
+        public static final int textView1=0x7f070001;
+        public static final int textView10=0x7f07000e;
+        public static final int textView2=0x7f070002;
+        public static final int textView3=0x7f070003;
+        public static final int textView4=0x7f070005;
+        public static final int textView5=0x7f070006;
+        public static final int textView6=0x7f070008;
+        public static final int textView7=0x7f070009;
+        public static final int textView8=0x7f07000b;
+        public static final int textView9=0x7f07000c;
     }
     public static final class layout {
-        public static final int activity_buy=0x7f030000;
-        public static final int activity_buy_book_details=0x7f030001;
-        public static final int activity_buy_message=0x7f030002;
-        public static final int activity_main=0x7f030003;
-        public static final int activity_send_confirmation=0x7f030004;
+        public static final int activity_add_book=0x7f030000;
+        public static final int activity_buy=0x7f030001;
+        public static final int activity_buy_book_details=0x7f030002;
+        public static final int activity_buy_message=0x7f030003;
+        public static final int activity_confirm_post=0x7f030004;
+        public static final int activity_main=0x7f030005;
+        public static final int activity_sell=0x7f030006;
+        public static final int activity_send_confirmation=0x7f030007;
     }
     public static final class menu {
-        public static final int activity_buy=0x7f060000;
-        public static final int activity_buy_book_details=0x7f060001;
-        public static final int activity_buy_message=0x7f060002;
-        public static final int activity_main=0x7f060003;
-        public static final int activity_send_confirmation=0x7f060004;
+        public static final int activity_add_book=0x7f060000;
+        public static final int activity_buy=0x7f060001;
+        public static final int activity_buy_book_details=0x7f060002;
+        public static final int activity_buy_message=0x7f060003;
+        public static final int activity_confirm_post=0x7f060004;
+        public static final int activity_main=0x7f060005;
+        public static final int activity_sell=0x7f060006;
+        public static final int activity_send_confirmation=0x7f060007;
     }
     public static final class string {
+        public static final int add_book_button=0x7f04001b;
         public static final int app_name=0x7f040000;
         public static final int author=0x7f040009;
+        public static final int author_hint=0x7f040020;
         public static final int back=0x7f04000c;
         public static final int buy=0x7f04000b;
         public static final int buy_message_hint=0x7f040017;
         public static final int buy_message_instructions=0x7f04000e;
         public static final int buy_message_sent=0x7f040018;
         public static final int buy_search_hint=0x7f040004;
+        public static final int confirm_post=0x7f040024;
+        public static final int currently_selling=0x7f04001c;
         public static final int hello_world=0x7f040001;
         public static final int home=0x7f04000d;
         public static final int isbn=0x7f040007;
+        public static final int isbn_hint=0x7f04001e;
         public static final int menu_settings=0x7f040002;
+        public static final int post=0x7f040022;
         public static final int price=0x7f040006;
         public static final int return_home=0x7f040019;
         public static final int sample_author=0x7f040012;
@@ -73,11 +92,16 @@ public final class R {
         public static final int sample_title=0x7f040010;
         public static final int send=0x7f04000f;
         public static final int subject=0x7f04000a;
+        public static final int subject_hint=0x7f040021;
         public static final int title=0x7f040008;
+        public static final int title_activity_add_book=0x7f04001d;
         public static final int title_activity_buy=0x7f040003;
         public static final int title_activity_buy_book_details=0x7f040005;
         public static final int title_activity_buy_message=0x7f040015;
+        public static final int title_activity_confirm_post=0x7f040023;
+        public static final int title_activity_sell=0x7f04001a;
         public static final int title_activity_send_confirmation=0x7f040016;
+        public static final int title_hint=0x7f04001f;
     }
     public static final class style {
         /** 

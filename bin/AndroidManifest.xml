@@ -46,6 +46,18 @@
             android:name="cs1635.group.booksharing.SendConfirmationActivity"
             android:label="@string/title_activity_send_confirmation" >
         </activity>
+        <activity
+            android:name="cs1635.group.booksharing.SellActivity"
+            android:label="@string/title_activity_sell" >
+        </activity>
+        <activity
+            android:name="cs1635.group.booksharing.AddBookActivity"
+            android:label="@string/title_activity_add_book" >
+        </activity>
+        <activity
+            android:name="cs1635.group.booksharing.ConfirmPostActivity"
+            android:label="@string/title_activity_confirm_post" >
+        </activity>
     </application>
 
 </manifest>
