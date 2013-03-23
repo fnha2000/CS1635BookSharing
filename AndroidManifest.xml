@@ -58,6 +58,14 @@
             android:name="cs1635.group.booksharing.ConfirmPostActivity"
             android:label="@string/title_activity_confirm_post" >
         </activity>
+        <activity
+            android:name="cs1635.group.booksharing.MessagesActivity"
+            android:label="@string/title_activity_messages" >
+        </activity>
+        <activity
+            android:name="cs1635.group.booksharing.AppointmentsActivity"
+            android:label="@string/title_activity_appointments" >
+        </activity>
     </application>
 
 </manifest>
