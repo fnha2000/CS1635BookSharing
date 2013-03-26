@@ -12,37 +12,50 @@ public final class R {
     }
     public static final class drawable {
         public static final int android_text_photo=0x7f020000;
-        public static final int ic_launcher=0x7f020001;
+        public static final int appointments=0x7f020001;
+        public static final int buy=0x7f020002;
+        public static final int help=0x7f020003;
+        public static final int ic_launcher=0x7f020004;
+        public static final int messages=0x7f020005;
+        public static final int profile=0x7f020006;
+        public static final int sell=0x7f020007;
     }
     public static final class id {
         public static final int Apnt1=0x7f070013;
         public static final int Apnt1Time=0x7f070014;
         public static final int Apnt2=0x7f070015;
         public static final int Apnt2Time=0x7f070016;
-        public static final int From1=0x7f07001e;
-        public static final int From2=0x7f07001f;
-        public static final int ImageView01=0x7f070020;
+        public static final int From1=0x7f070025;
+        public static final int From2=0x7f070026;
+        public static final int ImageView01=0x7f070027;
         public static final int ImageView05=0x7f070019;
-        public static final int TextView01=0x7f070021;
-        public static final int TextView02=0x7f070022;
+        public static final int TextView01=0x7f070028;
+        public static final int TextView02=0x7f070029;
         public static final int TextView09=0x7f07001b;
         public static final int TextView10=0x7f07001a;
+        public static final int appointmentsButton=0x7f070023;
         public static final int button1=0x7f070000;
-        public static final int button2=0x7f070023;
-        public static final int button3=0x7f070024;
+        public static final int button2=0x7f07002a;
+        public static final int button3=0x7f07002b;
         public static final int button_back=0x7f07000f;
         public static final int button_buy=0x7f070011;
         public static final int button_home=0x7f070010;
         public static final int button_send=0x7f07001d;
+        public static final int buyButton=0x7f07001f;
         public static final int editText1=0x7f070004;
         public static final int editText2=0x7f070007;
         public static final int editText3=0x7f07000a;
         public static final int editText4=0x7f07000d;
+        public static final int helpButton=0x7f070020;
         public static final int imageView1=0x7f07001c;
-        public static final int menu_settings=0x7f070025;
+        public static final int menu_settings=0x7f07002c;
+        public static final int messagesButton=0x7f070022;
+        public static final int profileButton=0x7f070021;
         public static final int results_list=0x7f070018;
         public static final int scrollView1=0x7f070012;
         public static final int search_field=0x7f070017;
+        public static final int sellButton=0x7f07001e;
+        public static final int signInButton=0x7f070024;
         public static final int textView1=0x7f070001;
         public static final int textView10=0x7f07000e;
         public static final int textView2=0x7f070002;
@@ -61,10 +74,13 @@ public final class R {
         public static final int activity_buy_book_details=0x7f030003;
         public static final int activity_buy_message=0x7f030004;
         public static final int activity_confirm_post=0x7f030005;
-        public static final int activity_main=0x7f030006;
-        public static final int activity_messages=0x7f030007;
-        public static final int activity_sell=0x7f030008;
-        public static final int activity_send_confirmation=0x7f030009;
+        public static final int activity_help=0x7f030006;
+        public static final int activity_home=0x7f030007;
+        public static final int activity_main=0x7f030008;
+        public static final int activity_messages=0x7f030009;
+        public static final int activity_profile=0x7f03000a;
+        public static final int activity_sell=0x7f03000b;
+        public static final int activity_send_confirmation=0x7f03000c;
     }
     public static final class menu {
         public static final int activity_add_book=0x7f060000;
@@ -73,33 +89,48 @@ public final class R {
         public static final int activity_buy_book_details=0x7f060003;
         public static final int activity_buy_message=0x7f060004;
         public static final int activity_confirm_post=0x7f060005;
-        public static final int activity_main=0x7f060006;
-        public static final int activity_messages=0x7f060007;
-        public static final int activity_sell=0x7f060008;
-        public static final int activity_send_confirmation=0x7f060009;
+        public static final int activity_help=0x7f060006;
+        public static final int activity_home=0x7f060007;
+        public static final int activity_main=0x7f060008;
+        public static final int activity_messages=0x7f060009;
+        public static final int activity_profile=0x7f06000a;
+        public static final int activity_sell=0x7f06000b;
+        public static final int activity_send_confirmation=0x7f06000c;
     }
     public static final class string {
         public static final int add_book_button=0x7f04001e;
         public static final int add_photo=0x7f04002c;
-        public static final int app_name=0x7f040000;
+        public static final int app_name=0x7f040001;
         public static final int author=0x7f040009;
         public static final int author_hint=0x7f040023;
         public static final int back=0x7f04000c;
+        public static final int button_appointments=0x7f040032;
+        public static final int button_buy=0x7f04002e;
+        public static final int button_help=0x7f040030;
+        public static final int button_messages=0x7f040033;
+        public static final int button_profile=0x7f040031;
+        public static final int button_sell=0x7f04002f;
+        public static final int button_signIn=0x7f04002d;
         public static final int buy=0x7f04000b;
         public static final int buy_message_hint=0x7f04001a;
         public static final int buy_message_instructions=0x7f04000e;
         public static final int buy_message_sent=0x7f04001b;
         public static final int buy_search_hint=0x7f040004;
+        public static final int buy_sell=0x7f040038;
         public static final int confirm_post=0x7f040027;
         public static final int currently_selling=0x7f04001f;
         public static final int edit=0x7f040028;
-        public static final int from=0x7f04002d;
-        public static final int hello_world=0x7f040001;
+        public static final int email_hint=0x7f040035;
+        public static final int from=0x7f04003a;
+        public static final int hello_world=0x7f040000;
         public static final int home=0x7f04000d;
+        public static final int home_screen=0x7f040039;
         public static final int isbn=0x7f040007;
         public static final int isbn_hint=0x7f040021;
+        public static final int login=0x7f040037;
         public static final int menu_settings=0x7f040002;
-        public static final int open=0x7f04002e;
+        public static final int open=0x7f04003b;
+        public static final int pass_hint=0x7f040036;
         public static final int post=0x7f040025;
         public static final int price=0x7f040006;
         public static final int return_home=0x7f04001c;
@@ -122,11 +153,12 @@ public final class R {
         public static final int title_activity_buy_book_details=0x7f040005;
         public static final int title_activity_buy_message=0x7f040018;
         public static final int title_activity_confirm_post=0x7f040026;
+        public static final int title_activity_home=0x7f040034;
         public static final int title_activity_messages=0x7f040029;
         public static final int title_activity_sell=0x7f04001d;
         public static final int title_activity_send_confirmation=0x7f040019;
         public static final int title_hint=0x7f040022;
-        public static final int view=0x7f04002f;
+        public static final int view=0x7f04003c;
     }
     public static final class style {
         /** 
