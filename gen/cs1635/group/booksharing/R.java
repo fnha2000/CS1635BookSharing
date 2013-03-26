@@ -121,7 +121,7 @@ public final class R {
         public static final int currently_selling=0x7f04001f;
         public static final int edit=0x7f040028;
         public static final int email_hint=0x7f040035;
-        public static final int from=0x7f04003a;
+        public static final int from=0x7f04003c;
         public static final int hello_world=0x7f040000;
         public static final int home=0x7f04000d;
         public static final int home_screen=0x7f040039;
@@ -129,7 +129,7 @@ public final class R {
         public static final int isbn_hint=0x7f040021;
         public static final int login=0x7f040037;
         public static final int menu_settings=0x7f040002;
-        public static final int open=0x7f04003b;
+        public static final int open=0x7f04003d;
         public static final int pass_hint=0x7f040036;
         public static final int post=0x7f040025;
         public static final int price=0x7f040006;
@@ -153,12 +153,14 @@ public final class R {
         public static final int title_activity_buy_book_details=0x7f040005;
         public static final int title_activity_buy_message=0x7f040018;
         public static final int title_activity_confirm_post=0x7f040026;
+        public static final int title_activity_help=0x7f04003a;
         public static final int title_activity_home=0x7f040034;
         public static final int title_activity_messages=0x7f040029;
+        public static final int title_activity_profile=0x7f04003b;
         public static final int title_activity_sell=0x7f04001d;
         public static final int title_activity_send_confirmation=0x7f040019;
         public static final int title_hint=0x7f040022;
-        public static final int view=0x7f04003c;
+        public static final int view=0x7f04003e;
     }
     public static final class style {
         /** 

@@ -56,6 +56,8 @@
     <string name="login">Login</string>
     <string name="buy_sell">to Buy and Sell!</string>
     <string name="home_screen">Home Screen</string>
+    <string name="title_activity_help">Help</string>
+    <string name="title_activity_profile">Profile</string>
     
     <string name="from">From:</string>
     
