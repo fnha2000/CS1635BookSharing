@@ -42,6 +42,7 @@
     <string name="title_activity_messages">Messages</string>
     <string name="title_activity_appointments">Appointments</string>
     <string name="search_button">Search</string>
+    <string name="add_photo">Add photo</string>
     
     <string name="from">From:</string>
     

@@ -37,5 +37,10 @@ public class AddBookActivity extends Activity {
 		Intent intent = new Intent(this, ConfirmPostActivity.class);
 		startActivity(intent);
 	}
+	
+	// Called when Add Photo button is pressed
+	public void addPhoto(View view) {
+		// Add code here.
+	}
 
 }

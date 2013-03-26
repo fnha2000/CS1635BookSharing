@@ -11,11 +11,12 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true" >
 
-        <ImageView
-            android:id="@+id/imageView1"
-            android:layout_width="92dp"
-            android:layout_height="132dp"
-            android:src="@drawable/android_text_photo" />
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:text="@string/add_photo"
+            android:onClick="addPhoto" />
 
         <LinearLayout
             android:layout_width="match_parent"

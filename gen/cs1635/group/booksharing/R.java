@@ -27,7 +27,7 @@ public final class R {
         public static final int TextView02=0x7f070021;
         public static final int TextView09=0x7f07001a;
         public static final int TextView10=0x7f070019;
-        public static final int button1=0x7f07001b;
+        public static final int button1=0x7f070000;
         public static final int button2=0x7f070022;
         public static final int button3=0x7f070023;
         public static final int button_back=0x7f07000f;
@@ -38,7 +38,7 @@ public final class R {
         public static final int editText2=0x7f070007;
         public static final int editText3=0x7f07000a;
         public static final int editText4=0x7f07000d;
-        public static final int imageView1=0x7f070000;
+        public static final int imageView1=0x7f07001b;
         public static final int menu_settings=0x7f070024;
         public static final int results_list=0x7f070017;
         public static final int scrollView1=0x7f070012;
@@ -79,6 +79,7 @@ public final class R {
     }
     public static final class string {
         public static final int add_book_button=0x7f04001e;
+        public static final int add_photo=0x7f04002c;
         public static final int app_name=0x7f040000;
         public static final int author=0x7f040009;
         public static final int author_hint=0x7f040023;
@@ -91,13 +92,13 @@ public final class R {
         public static final int confirm_post=0x7f040027;
         public static final int currently_selling=0x7f04001f;
         public static final int edit=0x7f040028;
-        public static final int from=0x7f04002c;
+        public static final int from=0x7f04002d;
         public static final int hello_world=0x7f040001;
         public static final int home=0x7f04000d;
         public static final int isbn=0x7f040007;
         public static final int isbn_hint=0x7f040021;
         public static final int menu_settings=0x7f040002;
-        public static final int open=0x7f04002d;
+        public static final int open=0x7f04002e;
         public static final int post=0x7f040025;
         public static final int price=0x7f040006;
         public static final int return_home=0x7f04001c;
@@ -124,7 +125,7 @@ public final class R {
         public static final int title_activity_sell=0x7f04001d;
         public static final int title_activity_send_confirmation=0x7f040019;
         public static final int title_hint=0x7f040022;
-        public static final int view=0x7f04002e;
+        public static final int view=0x7f04002f;
     }
     public static final class style {
         /** 
