@@ -67,15 +67,15 @@
             android:label="@string/title_activity_appointments" >
         </activity>
         <activity
-            android:name="com.example.bookapp.Home"
+            android:name="cs1635.group.booksharing.Home"
             android:label="@string/title_activity_home" >
         </activity>
         <activity
-            android:name="com.example.bookapp.Help"
+            android:name="cs1635.group.booksharing.Help"
             android:label="@string/title_activity_help" >
         </activity>
         <activity
-            android:name="com.example.bookapp.Profile"
+            android:name="cs1635.group.booksharing.Profile"
             android:label="@string/title_activity_profile" >
         </activity>
     </application>
