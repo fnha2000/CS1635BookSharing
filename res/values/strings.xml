@@ -22,7 +22,10 @@
     <string name="sample_author">Zugurd Mednieks et al.</string>
     <string name="sample_isbn">978-1-449-31664-8</string>
     <string name="sample_subject">Computer Science</string>
-    <string name="sample_user">John Smith</string><string name="sample_datetime">01/01/13 88:88</string><string name="sample_location">Hillman Library</string><string name="title_activity_buy_message">BuyMessageActivity</string>
+    <string name="sample_user">John Smith</string>
+    <string name="sample_datetime">01/01/13 88:88</string>
+    <string name="sample_location">Hillman Library</string>
+    <string name="title_activity_buy_message">BuyMessageActivity</string>
     <string name="title_activity_send_confirmation">SendConfirmationActivity</string>
     <string name="buy_message_hint">Enter your message here.</string>
     <string name="buy_message_sent">Your message has been sent. The seller will contact you if he or she wishes to arrange a transaction.</string>
@@ -58,11 +61,9 @@
     <string name="home_screen">Home Screen</string>
     <string name="title_activity_help">Help</string>
     <string name="title_activity_profile">Profile</string>
-    
     <string name="from">From:</string>
-    
     <string name="open">Open</string>
-    
     <string name="view">View</string>
+    <string name="title_activity_test">TestActivity</string>
 
 </resources>

@@ -81,6 +81,7 @@ public final class R {
         public static final int activity_profile=0x7f03000a;
         public static final int activity_sell=0x7f03000b;
         public static final int activity_send_confirmation=0x7f03000c;
+        public static final int activity_test=0x7f03000d;
     }
     public static final class menu {
         public static final int activity_add_book=0x7f060000;
@@ -96,6 +97,7 @@ public final class R {
         public static final int activity_profile=0x7f06000a;
         public static final int activity_sell=0x7f06000b;
         public static final int activity_send_confirmation=0x7f06000c;
+        public static final int activity_test=0x7f06000d;
     }
     public static final class string {
         public static final int add_book_button=0x7f04001e;
@@ -159,6 +161,7 @@ public final class R {
         public static final int title_activity_profile=0x7f04003b;
         public static final int title_activity_sell=0x7f04001d;
         public static final int title_activity_send_confirmation=0x7f040019;
+        public static final int title_activity_test=0x7f04003f;
         public static final int title_hint=0x7f040022;
         public static final int view=0x7f04003e;
     }

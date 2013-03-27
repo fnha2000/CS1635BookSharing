@@ -1,6 +1,7 @@
 package cs1635.group.booksharing;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -22,7 +23,8 @@ public class ConfirmPostActivity extends Activity {
 	
 	// Called when Return to Home Screen button is pressed.
 	public void goHome(View view) {
-		// Add code here.
+		Intent intent = new Intent(this, Home.class);
+		startActivity(intent);
 	}
 
 }

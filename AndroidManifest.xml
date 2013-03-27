@@ -75,8 +75,12 @@
             android:label="@string/title_activity_help" >
         </activity>
         <activity
-            android:name="cs1635.group.booksharing.Profile"
+            android:name="cs1635.group.booksharing.ProfileActivity"
             android:label="@string/title_activity_profile" >
+        </activity>
+        <activity
+            android:name="cs1635.group.booksharing.TestActivity"
+            android:label="@string/title_activity_test" >
         </activity>
     </application>
 

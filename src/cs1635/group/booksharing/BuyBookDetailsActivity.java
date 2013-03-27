@@ -45,16 +45,19 @@ public class BuyBookDetailsActivity extends Activity {
 	// Called on Back button click
 	public void goBack(View view) {
 		Intent intent = new Intent(this, BuyActivity.class);
+		startActivity(intent);
 	}
 	
 	// Called on Home button click
 	public void goHome(View view) {
-		// Add code here
+		Intent intent = new Intent(this, Home.class);
+		startActivity(intent);
 	}
 	
 	// Called on Buy button click
 	public void goToBuy(View view) {
 		Intent intent = new Intent(this, BuyMessageActivity.class);
+		startActivity(intent);
 	}
 	
 
