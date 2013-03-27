@@ -21,8 +21,8 @@
         android:layout_weight="0.41"
         android:ems="10"
         android:hint="@string/buy_message_hint"
-        android:imeOptions="actionDone|actionGo"
-        android:inputType="textMultiLine" >
+        android:imeOptions="actionDone"
+        android:inputType="text" >
 
         <requestFocus />
     </EditText>

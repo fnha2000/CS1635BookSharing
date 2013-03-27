@@ -31,7 +31,7 @@ public class BuyMessageActivity extends Activity {
 	    	public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
 	    		boolean handled = false;
 				
-				if (actionId == EditorInfo.IME_ACTION_SEARCH) {
+				if (actionId == EditorInfo.IME_ACTION_DONE) {
 					handled = true;
 					
 	    			// Close keyboard
