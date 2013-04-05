@@ -1,6 +1,6 @@
 package cs1635.group.booksharing;
 
-import android.app.Activity;
+import android.app.ListActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,17 +8,13 @@ import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.View.OnClickListener;
-import android.view.inputmethod.EditorInfo;
-import android.view.inputmethod.InputMethodManager;
-import android.widget.Button;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
 
-public class BuyActivity extends Activity {
+public class BuyActivity extends ListActivity {
 	Context thisContext = null;
 	
 	@Override
@@ -29,65 +25,25 @@ public class BuyActivity extends Activity {
 
 		EditText searchField = (EditText) findViewById(R.id.search_field);
 		
-		// Get list layout ID
-        final LinearLayout listLayout = (LinearLayout)this.findViewById(R.id.results_list);
-        
-        // Create layout for item
-     	final LinearLayout itemLayout = new LinearLayout(this);
-     	itemLayout.setOrientation(LinearLayout.HORIZONTAL);
-     	
-        
-     	// Create image
-        final ImageView image = new ImageView(this);
-        int resID = getResources().getIdentifier("android_text_photo", "drawable", getPackageName());	// Get resource ID of image
-        image.setImageResource(resID);
-        image.setAdjustViewBounds(true);
-        image.setMaxHeight(200);
-        image.setMaxWidth(200);
-        
-        // Create nested layout
-        final LinearLayout nestedLayout = new LinearLayout(this);
-        nestedLayout.setOrientation(LinearLayout.VERTICAL);
-        
-        // Create text labels
-        final TextView title = new TextView(this);
-        title.setText(getResources().getString(R.string.sample_title));
-        
-        final TextView price = new TextView(this);
-        price.setText(getResources().getString(R.string.sample_price));
-        
-        // Create button
-        final Button buyButton = new Button(this);
-        buyButton.setText(getResources().getString(R.string.buy));       
-        buyButton.setOnClickListener(buyButtonListener);
-		
-        searchField.setOnEditorActionListener(new OnEditorActionListener() {
-        	@Override
-        	public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-        		boolean handled = false;
-    			
-    			if (actionId == EditorInfo.IME_ACTION_SEARCH) {
-    				handled = true;
-    				
-        			// Close keyboard
-        			InputMethodManager imm = (InputMethodManager) v.getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
-    				imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
-        			
-        			// Erase text
-        			
-        			// Display search results
-	    			listLayout.addView(itemLayout);
-	    			itemLayout.addView(image);
-	    			itemLayout.addView(nestedLayout);
-	    			nestedLayout.addView(title);
-	    			nestedLayout.addView(price);
-	    			itemLayout.addView(buyButton);
-        		}
-        		
-        		return handled;
-        	}
-        });
-		
+		// This is for displaying dummy search results. We can replace it later with either a database query or
+				// data pulled from a text file. It only displays the title for now, because I haven't figured out how
+				// to set up list items with more than one line. This might actually be easier to do with a cursor.
+				String[] dummyResultsArray = {"Programming Android", "Programming Android", "Programming Android", "Programming Android", "Programming Android"}; 
+				final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, dummyResultsArray);
+				final ListView listView = (ListView) findViewById(android.R.id.list);
+				
+				// Display search results
+				searchField.setOnEditorActionListener(new OnEditorActionListener() {
+		        	@Override
+		        	public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+		        		boolean handled = false;
+		       
+		        		// Populate the list with four instances of dummy data.
+		        		listView.setAdapter(adapter);
+		        		
+		        		return handled;
+		        	}
+		        });		
 	}
 
 	@Override
@@ -120,12 +76,12 @@ public class BuyActivity extends Activity {
 	}
 	
 	// Called on Buy button press
-	OnClickListener buyButtonListener = new OnClickListener() {
-		@Override
-		public void onClick(View view) {
-			Intent intent = new Intent(thisContext, BuyBookDetailsActivity.class);
-			startActivity(intent);
-		}
-	};
+	// This is just a hardcoded dummy method to go to the details for the sample book.
+	// We need to figure out how to go to the selected book for real data.
+	@Override
+	public void onListItemClick(ListView l, View v, int position, long id) {
+		Intent intent = new Intent(this, BuyBookDetailsActivity.class);
+		startActivity(intent);
+	}
 	
 }

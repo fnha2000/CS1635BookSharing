@@ -16,31 +16,19 @@
         android:inputType="textNoSuggestions"
         android:singleLine="true" />
 
-    <ScrollView
-        android:id="@+id/scrollView1"
+    <ListView
+        android:id="@android:id/list"
         android:layout_width="match_parent"
+        android:layout_height="359dp"
+        android:layout_weight="0.40" >
+    </ListView>
+
+    <Button
+        android:id="@+id/button_home"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1.00" >
-
-        <LinearLayout
-            android:id="@+id/results_list"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical" >
-        </LinearLayout>
-    </ScrollView>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="bottom|center_horizontal" >
-
-        <Button
-            android:id="@+id/button_home"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="goHome"
-            android:text="@string/home" />
-    </LinearLayout>
+        android:layout_gravity="center_horizontal"
+        android:onClick="goHome"
+        android:text="@string/home" />
 
 </LinearLayout>

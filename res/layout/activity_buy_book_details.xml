@@ -9,6 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
+        <!-- Loading a large image here will cause the app to crash. -->
         <ImageView
             android:id="@+id/imageView1"
             android:layout_width="92dp"
