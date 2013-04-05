@@ -1,12 +1,19 @@
 package cs1635.group.booksharing;
 
-import android.os.Bundle;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
+import android.support.v4.app.NavUtils;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.support.v4.app.NavUtils;
+import android.view.inputmethod.EditorInfo;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.TextView.OnEditorActionListener;
 
 public class BuyMessageActivity extends Activity {
 
@@ -16,6 +23,25 @@ public class BuyMessageActivity extends Activity {
 		setContentView(R.layout.activity_buy_message);
 		// Show the Up button in the action bar.
 		//getActionBar().setDisplayHomeAsUpEnabled(true);	// API level is too high.
+		
+		// Hide keyboard when user is done.
+		EditText editText = (EditText)findViewById(R.id.editText1);
+		editText.setOnEditorActionListener(new OnEditorActionListener() {
+	    	@Override
+	    	public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+	    		boolean handled = false;
+				
+				if (actionId == EditorInfo.IME_ACTION_DONE) {
+					handled = true;
+					
+	    			// Close keyboard
+	    			InputMethodManager imm = (InputMethodManager) v.getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+					imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
+	    		}
+	    		
+	    		return handled;
+	    	}
+	    });
 	}
 
 	@Override
@@ -45,16 +71,19 @@ public class BuyMessageActivity extends Activity {
 	// Called on Back button click
 	public void goBack(View view) {
 		Intent intent = new Intent(this, BuyBookDetailsActivity.class);
+		startActivity(intent);
 	}
 	
 	// Called on Home button click
 	public void goHome(View view) {
-		// Add code here
+		Intent intent = new Intent(this, Home.class);
+		startActivity(intent);
 	}
 	
 	// Called on Buy button click
 	public void goToSendConfirmation(View view) {
 		Intent intent = new Intent(this, SendConfirmationActivity.class);
+		startActivity(intent);
 	}
 
 }

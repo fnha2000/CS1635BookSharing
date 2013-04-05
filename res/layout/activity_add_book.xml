@@ -58,7 +58,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/isbn_hint" >
+        android:hint="@string/isbn_hint"
+        android:imeOptions="actionDone|actionNext"
+        android:singleLine="true" >
 
         <requestFocus />
     </EditText>
@@ -83,7 +85,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-         android:hint="@string/title_hint" />
+        android:hint="@string/title_hint"
+        android:imeOptions="actionNext"
+        android:singleLine="true" />
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -105,7 +109,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/author_hint" />
+        android:hint="@string/author_hint"
+        android:imeOptions="actionNext"
+        android:singleLine="true" />
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -127,7 +133,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-         android:hint="@string/subject_hint" />
+        android:hint="@string/subject_hint"
+        android:imeOptions="actionDone"
+        android:singleLine="true" />
 
     <FrameLayout
         android:layout_width="match_parent"

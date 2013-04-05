@@ -8,11 +8,11 @@
     <Button
         android:id="@+id/button1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
+        android:background="#2caad8"
+        android:onClick="goToAddBook"
         android:text="@string/add_book_button"
-        android:textColor="#000"
-        android:background="#2caad8" 
-        android:onClick="goToAddBook"/>
+        android:textColor="#000" />
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -78,7 +78,8 @@
                     android:id="@+id/button2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/edit" />
+                    android:text="@string/edit"
+                    android:onClick="goToAddBook" />
 
             </LinearLayout>
 
@@ -116,7 +117,8 @@
                     android:id="@+id/button3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/edit" />
+                    android:text="@string/edit"
+                    android:onClick="goToAddBook" />
 
             </LinearLayout>
 

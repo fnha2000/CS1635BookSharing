@@ -112,7 +112,14 @@ public class BuyActivity extends Activity {
 		Intent intent = new Intent(this, BuyBookDetailsActivity.class);
 		startActivity(intent);
 	}
-    
+
+	// Called on Home button press
+	public void goHome(View view) {
+		Intent intent = new Intent(this, Home.class);
+		startActivity(intent);
+	}
+	
+	// Called on Buy button press
 	OnClickListener buyButtonListener = new OnClickListener() {
 		@Override
 		public void onClick(View view) {

@@ -1,10 +1,8 @@
 package cs1635.group.booksharing;
 
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.ContactsContract.Profile;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -55,13 +53,13 @@ public class Home extends Activity {
 			}
 		});
 		
+		// I had to rename Profile to ProfileActivity to get this to work.
+		// Android must reserve Profile for some specific use. - BL
 		profile = (ImageButton) this.findViewById(R.id.profileButton);
 		profile.setOnClickListener(new OnClickListener(){
-		
-			@SuppressLint("NewApi")	// Just a kludgy fix for the API problem for now.
 			@Override
 			public void onClick(View view){
-				myIntent = new Intent(Home.this, Profile.class);	// API problem here.
+				myIntent = new Intent(Home.this, ProfileActivity.class);
 				Home.this.startActivity(myIntent);
 			}
 		});
