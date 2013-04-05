@@ -21,10 +21,10 @@ public final class R {
         public static final int sell=0x7f020007;
     }
     public static final class id {
-        public static final int Apnt1=0x7f070013;
-        public static final int Apnt1Time=0x7f070014;
-        public static final int Apnt2=0x7f070015;
-        public static final int Apnt2Time=0x7f070016;
+        public static final int Apnt1=0x7f070012;
+        public static final int Apnt1Time=0x7f070013;
+        public static final int Apnt2=0x7f070014;
+        public static final int Apnt2Time=0x7f070015;
         public static final int From1=0x7f070022;
         public static final int From2=0x7f070023;
         public static final int ImageView01=0x7f070024;
@@ -37,9 +37,9 @@ public final class R {
         public static final int button1=0x7f070000;
         public static final int button2=0x7f070027;
         public static final int button3=0x7f07002b;
-        public static final int button_back=0x7f07000f;
-        public static final int button_buy=0x7f070011;
-        public static final int button_home=0x7f070010;
+        public static final int button_back=0x7f070019;
+        public static final int button_buy=0x7f070010;
+        public static final int button_home=0x7f07000f;
         public static final int button_send=0x7f07001a;
         public static final int buyButton=0x7f07001c;
         public static final int editText1=0x7f070004;
@@ -47,13 +47,13 @@ public final class R {
         public static final int editText3=0x7f07000a;
         public static final int editText4=0x7f07000d;
         public static final int helpButton=0x7f07001d;
-        public static final int imageView1=0x7f070019;
+        public static final int imageView1=0x7f070018;
         public static final int menu_settings=0x7f07002c;
         public static final int messagesButton=0x7f07001f;
         public static final int profileButton=0x7f07001e;
-        public static final int results_list=0x7f070018;
-        public static final int scrollView1=0x7f070012;
-        public static final int search_field=0x7f070017;
+        public static final int results_list=0x7f070017;
+        public static final int scrollView1=0x7f070011;
+        public static final int search_field=0x7f070016;
         public static final int sellButton=0x7f07001b;
         public static final int signInButton=0x7f070021;
         public static final int textView1=0x7f070001;

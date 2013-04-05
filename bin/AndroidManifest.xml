@@ -24,7 +24,7 @@
         </activity>
         <activity
             android:name="cs1635.group.booksharing.BuyActivity"
-            android:label="@string/title_activity_buy" >
+            android:label="@string/title_activity_buy" android:parentActivityName="cs1635.group.booksharing.Home">
         </activity>
         <activity
             android:name="cs1635.group.booksharing.BuyBookDetailsActivity"
@@ -48,11 +48,11 @@
         </activity>
         <activity
             android:name="cs1635.group.booksharing.SellActivity"
-            android:label="@string/title_activity_sell" >
+            android:label="@string/title_activity_sell" android:parentActivityName="cs1635.group.booksharing.Home">
         </activity>
         <activity
             android:name="cs1635.group.booksharing.AddBookActivity"
-            android:label="@string/title_activity_add_book" >
+            android:label="@string/title_activity_add_book" android:parentActivityName="cs1635.group.booksharing.SellActivity">
         </activity>
         <activity
             android:name="cs1635.group.booksharing.ConfirmPostActivity"
@@ -60,11 +60,11 @@
         </activity>
         <activity
             android:name="cs1635.group.booksharing.MessagesActivity"
-            android:label="@string/title_activity_messages" >
+            android:label="@string/title_activity_messages" android:parentActivityName="cs1635.group.booksharing.Home">
         </activity>
         <activity
             android:name="cs1635.group.booksharing.AppointmentsActivity"
-            android:label="@string/title_activity_appointments" >
+            android:label="@string/title_activity_appointments" android:parentActivityName="cs1635.group.booksharing.Home">
         </activity>
         <activity
             android:name="cs1635.group.booksharing.Home"
@@ -72,7 +72,7 @@
         </activity>
         <activity
             android:name="cs1635.group.booksharing.Help"
-            android:label="@string/title_activity_help" >
+            android:label="@string/title_activity_help" android:parentActivityName="cs1635.group.booksharing.Home">
         </activity>
         <activity
             android:name="cs1635.group.booksharing.Profile"

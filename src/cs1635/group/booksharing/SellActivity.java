@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 public class SellActivity extends Activity {
@@ -21,10 +22,28 @@ public class SellActivity extends Activity {
 		return true;
 	}
 	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case android.R.id.home:
+			finish();
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
+	}
+	
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		String action = data.getStringExtra("action");
+		if (action.equals("Home")) {
+			finish();
+		}
+	}
+	
 	// Called on Add Book button press.
 	public void goToAddBook(View view) {
 		Intent intent = new Intent(this, AddBookActivity.class);
-		startActivity(intent);
+		startActivityForResult(intent, 0);
 	}
 	
 	// Called on Edit button press.

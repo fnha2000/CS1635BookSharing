@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 public class AddBookActivity extends Activity {
@@ -21,15 +22,12 @@ public class AddBookActivity extends Activity {
 		return true;
 	}
 	
-	// Called when Back button is pressed
-	public void goBack(View view) {
-		Intent intent = new Intent(this, SellActivity.class);
-		startActivity(intent);
-	}
-	
 	// Called when Home button is pressed
 	public void goHome(View view) {
-		// Add code here.
+		Intent intent = new Intent();
+		intent.putExtra("action", "Home");
+		setResult(0, intent);
+		finish();
 	}
 	
 	// Called when Post button is pressed
@@ -43,4 +41,16 @@ public class AddBookActivity extends Activity {
 		// Add code here.
 	}
 
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case android.R.id.home:
+			Intent intent = new Intent();
+			intent.putExtra("action", "None");
+			setResult(0, intent);
+			finish();
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
+	}
 }
