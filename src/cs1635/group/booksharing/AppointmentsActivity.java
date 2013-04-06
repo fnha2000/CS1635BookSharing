@@ -1,16 +1,21 @@
 package cs1635.group.booksharing;
 
+import android.app.ListActivity;
 import android.os.Bundle;
-import android.app.Activity;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class AppointmentsActivity extends Activity {
+public class AppointmentsActivity extends ListActivity {
 
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
+	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_appointments);
+		
+		AppointmentData[] apt = new AppointmentData[2];
+		apt[0] = new AppointmentData("John Smith", "01/01/13", "00:00", "Hillman");
+		apt[1] = new AppointmentData("John Smith", "01/01/13", "00:02", "Starbucks");
+		AppointmentAdapter apts = new AppointmentAdapter(this, R.layout.appointment_layout, apt);
+		setListAdapter(apts);
 	}
 
 	@Override
