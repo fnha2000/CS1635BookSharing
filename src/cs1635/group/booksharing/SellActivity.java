@@ -1,18 +1,30 @@
 package cs1635.group.booksharing;
 
-import android.app.Activity;
+import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ListView;
 
-public class SellActivity extends Activity {
+public class SellActivity extends ListActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_sell);
+		
+		// Add dummy data to list.
+		BookData[] dummyResultsArray = new BookData[3];
+		dummyResultsArray[0] = new BookData("Programming Android", "$25.00");
+		dummyResultsArray[1] = new BookData("War and Peace", "$8.50");
+		dummyResultsArray[2] = new BookData("The Iliad", "$12.00");
+		
+		final BookAdapter adapter = new BookAdapter(this, android.R.layout.simple_list_item_1, dummyResultsArray);
+		final ListView listView = (ListView) findViewById(android.R.id.list);
+		
+		listView.setAdapter(adapter);
 	}
 
 	@Override
@@ -46,10 +58,11 @@ public class SellActivity extends Activity {
 		startActivityForResult(intent, 0);
 	}
 	
-	// Called on Edit button press.
-	// NOTE: Once we implement the underlying systems, we'll probably want to change this to go to its own activity that lets the user edit the existing information,
-	// but for now, I'm just linking it to the screen to add a new book.
-	public void edit(View view) {
+	// Called on Buy button press
+	// This is just a hardcoded dummy method to go to the details for the sample book.
+	// We need to figure out how to go to the selected book for real data.
+	@Override
+	public void onListItemClick(ListView l, View v, int position, long id) {
 		Intent intent = new Intent(this, AddBookActivity.class);
 		startActivity(intent);
 	}

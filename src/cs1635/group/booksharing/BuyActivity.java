@@ -29,8 +29,12 @@ public class BuyActivity extends ListActivity {
 		// This is for displaying dummy search results. We can replace it later with either a database query or
 				// data pulled from a text file. It only displays the title for now, because I haven't figured out how
 				// to set up list items with more than one line. This might actually be easier to do with a cursor.
-				String[] dummyResultsArray = {"Programming Android", "Programming Android", "Programming Android", "Programming Android", "Programming Android"}; 
-				final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, dummyResultsArray);
+				BookData[] dummyResultsArray = new BookData[3];
+				dummyResultsArray[0] = new BookData("Programming Android", "$25.00");
+				dummyResultsArray[1] = new BookData("War and Peace", "$8.50");
+				dummyResultsArray[2] = new BookData("The Iliad", "$12.00");
+				
+				final BookAdapter adapter = new BookAdapter(this, android.R.layout.simple_list_item_1, dummyResultsArray);
 				final ListView listView = (ListView) findViewById(android.R.id.list);
 				
 				// Display search results
@@ -39,7 +43,7 @@ public class BuyActivity extends ListActivity {
 		        	public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
 		        		boolean handled = false;
 		       
-		        		// Populate the list with four instances of dummy data.
+		        		// Populate the list with dummy data.
 		        		listView.setAdapter(adapter);
 		        		
 		        		// Hide the keyboard

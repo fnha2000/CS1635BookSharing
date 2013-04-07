@@ -65,5 +65,6 @@
     <string name="open">Open</string>
     <string name="view">View</string>
     <string name="title_activity_test">TestActivity</string>
+    <string name="price_hint">Enter price</string>
 
 </resources>
