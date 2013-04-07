@@ -8,6 +8,7 @@ import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -40,6 +41,11 @@ public class BuyActivity extends ListActivity {
 		       
 		        		// Populate the list with four instances of dummy data.
 		        		listView.setAdapter(adapter);
+		        		
+		        		// Hide the keyboard
+		        		InputMethodManager imm = (InputMethodManager) v.getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+	    				imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
+	        			handled = true;
 		        		
 		        		return handled;
 		        	}
