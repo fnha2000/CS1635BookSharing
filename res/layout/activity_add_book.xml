@@ -41,6 +41,13 @@
         </LinearLayout>
     </LinearLayout>
 
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/scan_button"
+        android:onClick="scan" />
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"

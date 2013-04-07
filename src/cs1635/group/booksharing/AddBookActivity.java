@@ -22,7 +22,7 @@ public class AddBookActivity extends Activity {
 		return true;
 	}
 	
-	// Called when Home button is pressed
+	// Called when "Home" button is pressed
 	public void goHome(View view) {
 		Intent intent = new Intent();
 		intent.putExtra("action", "Home");
@@ -30,14 +30,19 @@ public class AddBookActivity extends Activity {
 		finish();
 	}
 	
-	// Called when Post button is pressed
+	// Called when "Post" button is pressed
 	public void post(View view) {
 		Intent intent = new Intent(this, ConfirmPostActivity.class);
 		startActivity(intent);
 	}
 	
-	// Called when Add Photo button is pressed
+	// Called when "Add photo" button is pressed
 	public void addPhoto(View view) {
+		// Add code here.
+	}
+	
+	// Called when "Scan barcode"
+	public void scan(View view) {
 		// Add code here.
 	}
 
