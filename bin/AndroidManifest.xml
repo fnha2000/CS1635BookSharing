@@ -15,7 +15,8 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="cs1635.group.booksharing.MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,12 +25,15 @@
         </activity>
         <activity
             android:name="cs1635.group.booksharing.BuyActivity"
-            android:label="@string/title_activity_buy" android:parentActivityName="cs1635.group.booksharing.Home">
+            android:label="@string/title_activity_buy" 
+            android:parentActivityName="cs1635.group.booksharing.Home"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="cs1635.group.booksharing.BuyBookDetailsActivity"
             android:label="@string/title_activity_buy_book_details"
-            android:parentActivityName="cs1635.group.booksharing.BuyActivity" >
+            android:parentActivityName="cs1635.group.booksharing.BuyActivity"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="cs1635.group.booksharing.BuyActivity" />
@@ -37,50 +41,66 @@
         <activity
             android:name="cs1635.group.booksharing.BuyMessageActivity"
             android:label="@string/title_activity_buy_message"
-            android:parentActivityName="cs1635.group.booksharing.BuyBookDetailsActivity" >
+            android:parentActivityName="cs1635.group.booksharing.BuyBookDetailsActivity"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="cs1635.group.booksharing.BuyBookDetailsActivity" />
         </activity>
         <activity
             android:name="cs1635.group.booksharing.SendConfirmationActivity"
-            android:label="@string/title_activity_send_confirmation" >
+            android:label="@string/title_activity_send_confirmation"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="cs1635.group.booksharing.SellActivity"
-            android:label="@string/title_activity_sell" android:parentActivityName="cs1635.group.booksharing.Home">
+            android:label="@string/title_activity_sell" 
+            android:parentActivityName="cs1635.group.booksharing.Home"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="cs1635.group.booksharing.AddBookActivity"
-            android:label="@string/title_activity_add_book" android:parentActivityName="cs1635.group.booksharing.SellActivity">
+            android:label="@string/title_activity_add_book" 
+            android:parentActivityName="cs1635.group.booksharing.SellActivity"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="cs1635.group.booksharing.ConfirmPostActivity"
-            android:label="@string/title_activity_confirm_post" >
+            android:label="@string/title_activity_confirm_post"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="cs1635.group.booksharing.MessagesActivity"
-            android:label="@string/title_activity_messages" android:parentActivityName="cs1635.group.booksharing.Home">
+            android:label="@string/title_activity_messages" 
+            android:parentActivityName="cs1635.group.booksharing.Home"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="cs1635.group.booksharing.AppointmentsActivity"
-            android:label="@string/title_activity_appointments" android:parentActivityName="cs1635.group.booksharing.Home">
+            android:label="@string/title_activity_appointments" 
+            android:parentActivityName="cs1635.group.booksharing.Home"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="cs1635.group.booksharing.Home"
-            android:label="@string/title_activity_home" >
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="cs1635.group.booksharing.Help"
-            android:label="@string/title_activity_help" android:parentActivityName="cs1635.group.booksharing.Home">
+            android:label="@string/title_activity_help" 
+            android:parentActivityName="cs1635.group.booksharing.Home"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="cs1635.group.booksharing.ProfileActivity"
-            android:label="@string/title_activity_profile" >
+            android:label="@string/title_activity_profile"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="cs1635.group.booksharing.TestActivity"
-            android:label="@string/title_activity_test" >
+            android:label="@string/title_activity_test"
+            android:screenOrientation="portrait" >
         </activity>
     </application>
 
