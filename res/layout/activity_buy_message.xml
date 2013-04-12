@@ -18,7 +18,7 @@
         android:id="@+id/editText1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.41"
+        android:layout_weight="0.35"
         android:ems="10"
         android:hint="@string/buy_message_hint"
         android:imeOptions="actionDone"
@@ -35,6 +35,7 @@
             android:id="@+id/button_home"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="0.35"
             android:onClick="goHome"
             android:text="@string/home" />
 
@@ -48,8 +49,10 @@
             android:id="@+id/button_send"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="0.35"
             android:onClick="goToSendConfirmation"
             android:text="@string/send" />
+
     </LinearLayout>
 
 </LinearLayout>

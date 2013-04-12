@@ -133,8 +133,9 @@
             android:id="@+id/button_home"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/home"
-            android:onClick="goHome" />
+            android:layout_weight="0.20"
+            android:onClick="goHome"
+            android:text="@string/home" />
 
         <FrameLayout
             android:layout_width="wrap_content"
@@ -147,8 +148,10 @@
             android:id="@+id/button_buy"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/buy"
-            android:onClick="goToBuy" />
+            android:layout_weight="0.20"
+            android:onClick="goToBuy"
+            android:text="@string/buy" />
+
     </LinearLayout>
 
 </LinearLayout>
