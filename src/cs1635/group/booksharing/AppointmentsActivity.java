@@ -1,9 +1,12 @@
 package cs1635.group.booksharing;
 
 import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ListView;
 
 public class AppointmentsActivity extends ListActivity {
 
@@ -33,5 +36,12 @@ public class AppointmentsActivity extends ListActivity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+	
+	// Called on list item click. Opens hardcoded sample appointment.
+	@Override
+	public void onListItemClick(ListView l, View v, int position, long id) {
+		Intent intent = new Intent(this, AppointmentDetailsActivity.class);
+		startActivity(intent);
 	}
 }
