@@ -165,6 +165,6 @@ pip-log.txt
 ###########
 #Android
 ###########
-.class
-.dex
-.ap_
+*.class
+*.dex
+*.ap_
