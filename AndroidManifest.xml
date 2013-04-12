@@ -112,6 +112,10 @@
             android:name="cs1635.group.booksharing.AppointmentDetailsActivity"
             android:label="@string/title_activity_appointment_details" >
         </activity>
+        <activity
+            android:name="cs1635.group.booksharing.MessageReplyActivity"
+            android:label="@string/title_activity_message_reply" >
+        </activity>
     </application>
 
 </manifest>

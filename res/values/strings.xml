@@ -87,5 +87,7 @@
     <string name="yes">Yes</string>
     <string name="never_mind">Never mind</string>
     <string name="appointment_canceled_dialog">Appointment canceled.</string>
+    <string name="title_activity_message_reply">MessageReplyActivity</string>
+    <string name="reply_hint">Enter your message here.</string>
 
 </resources>

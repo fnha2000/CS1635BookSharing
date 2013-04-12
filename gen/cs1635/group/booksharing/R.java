@@ -31,8 +31,8 @@ public final class R {
         public static final int sell=0x7f020007;
     }
     public static final class id {
-        public static final int action_settings=0x7f080038;
-        public static final int apntmnt=0x7f08002d;
+        public static final int action_settings=0x7f08003a;
+        public static final int apntmnt=0x7f08002f;
         public static final int appointment_address=0x7f080013;
         public static final int appointment_address_label=0x7f080012;
         public static final int appointment_date=0x7f080016;
@@ -42,14 +42,15 @@ public final class R {
         public static final int appointment_time=0x7f080018;
         public static final int appointment_time_label=0x7f080017;
         public static final int appointmentsButton=0x7f080025;
-        public static final int aptdate=0x7f08002e;
-        public static final int apttime=0x7f08002f;
+        public static final int aptdate=0x7f080030;
+        public static final int apttime=0x7f080031;
         public static final int button1=0x7f080000;
         public static final int button2=0x7f080003;
         public static final int button_buy=0x7f080011;
         public static final int button_cancel_appointment=0x7f08001b;
         public static final int button_home=0x7f080010;
         public static final int button_send=0x7f08001f;
+        public static final int button_send_reply=0x7f08002e;
         public static final int button_view_map=0x7f080014;
         public static final int buyButton=0x7f080021;
         public static final int editText1=0x7f080005;
@@ -57,11 +58,12 @@ public final class R {
         public static final int editText3=0x7f08000b;
         public static final int editText4=0x7f08000e;
         public static final int editText5=0x7f080002;
+        public static final int editText_reply=0x7f08002d;
         public static final int helpButton=0x7f080022;
         public static final int imageView1=0x7f08001d;
-        public static final int location=0x7f080030;
-        public static final int menu_settings=0x7f080037;
-        public static final int message=0x7f080036;
+        public static final int location=0x7f080032;
+        public static final int menu_settings=0x7f080039;
+        public static final int message=0x7f080038;
         public static final int messagesButton=0x7f080024;
         public static final int msgdetail_content=0x7f08002c;
         public static final int msgdetail_date=0x7f08002a;
@@ -69,13 +71,13 @@ public final class R {
         public static final int msgdetail_from=0x7f080028;
         public static final int msgdetail_fromLabel=0x7f080027;
         public static final int msgdetail_time=0x7f08002b;
-        public static final int price=0x7f080032;
+        public static final int price=0x7f080034;
         public static final int profileButton=0x7f080023;
         public static final int search_field=0x7f08001c;
         public static final int sellButton=0x7f080020;
-        public static final int senddate=0x7f080034;
-        public static final int sender=0x7f080033;
-        public static final int sendtime=0x7f080035;
+        public static final int senddate=0x7f080036;
+        public static final int sender=0x7f080035;
+        public static final int sendtime=0x7f080037;
         public static final int signInButton=0x7f080026;
         public static final int textView1=0x7f080001;
         public static final int textView10=0x7f08000f;
@@ -87,7 +89,7 @@ public final class R {
         public static final int textView7=0x7f08000a;
         public static final int textView8=0x7f08000c;
         public static final int textView9=0x7f08000d;
-        public static final int title=0x7f080031;
+        public static final int title=0x7f080033;
     }
     public static final class layout {
         public static final int activity_add_book=0x7f030000;
@@ -99,12 +101,13 @@ public final class R {
         public static final int activity_home=0x7f030006;
         public static final int activity_main=0x7f030007;
         public static final int activity_message_detail=0x7f030008;
-        public static final int activity_profile=0x7f030009;
-        public static final int activity_sell=0x7f03000a;
-        public static final int activity_test=0x7f03000b;
-        public static final int appointment_layout=0x7f03000c;
-        public static final int book_list_layout=0x7f03000d;
-        public static final int message_layout=0x7f03000e;
+        public static final int activity_message_reply=0x7f030009;
+        public static final int activity_profile=0x7f03000a;
+        public static final int activity_sell=0x7f03000b;
+        public static final int activity_test=0x7f03000c;
+        public static final int appointment_layout=0x7f03000d;
+        public static final int book_list_layout=0x7f03000e;
+        public static final int message_layout=0x7f03000f;
     }
     public static final class menu {
         public static final int activity_add_book=0x7f070000;
@@ -123,6 +126,7 @@ public final class R {
         public static final int activity_send_confirmation=0x7f07000d;
         public static final int activity_test=0x7f07000e;
         public static final int appointment_details=0x7f07000f;
+        public static final int message_reply=0x7f070010;
     }
     public static final class string {
         public static final int action_settings=0x7f05004a;
@@ -172,6 +176,7 @@ public final class R {
         public static final int post=0x7f050026;
         public static final int price=0x7f050006;
         public static final int price_hint=0x7f050044;
+        public static final int reply_hint=0x7f050057;
         public static final int return_home=0x7f05001d;
         public static final int sample_address=0x7f05004e;
         public static final int sample_appointment_message=0x7f05004f;
@@ -202,6 +207,7 @@ public final class R {
         public static final int title_activity_help=0x7f05003d;
         public static final int title_activity_home=0x7f050037;
         public static final int title_activity_message_detail=0x7f050046;
+        public static final int title_activity_message_reply=0x7f050056;
         public static final int title_activity_messages=0x7f05002a;
         public static final int title_activity_profile=0x7f05003e;
         public static final int title_activity_sell=0x7f05001e;
