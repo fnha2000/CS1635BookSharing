@@ -34,5 +34,9 @@ public class AppointmentDetailsActivity extends FragmentActivity {
 		DialogFragment dialog = new ConfirmCancelAppointmentDialogFragment();
 		dialog.show(getSupportFragmentManager(), "ConfirmCancelAppointmentDialogFragment");
 	}
+	
+	public void goBack(View v) {
+		finish();
+	}
 
 }

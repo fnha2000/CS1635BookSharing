@@ -23,12 +23,13 @@ public final class R {
     public static final class drawable {
         public static final int android_text_photo=0x7f020000;
         public static final int appointments=0x7f020001;
-        public static final int buy=0x7f020002;
-        public static final int help=0x7f020003;
-        public static final int ic_launcher=0x7f020004;
-        public static final int messages=0x7f020005;
-        public static final int profile=0x7f020006;
-        public static final int sell=0x7f020007;
+        public static final int background=0x7f020002;
+        public static final int buy=0x7f020003;
+        public static final int help=0x7f020004;
+        public static final int ic_launcher=0x7f020005;
+        public static final int messages=0x7f020006;
+        public static final int profile=0x7f020007;
+        public static final int sell=0x7f020008;
     }
     public static final class id {
         public static final int action_settings=0x7f08003a;
@@ -104,10 +105,9 @@ public final class R {
         public static final int activity_message_reply=0x7f030009;
         public static final int activity_profile=0x7f03000a;
         public static final int activity_sell=0x7f03000b;
-        public static final int activity_test=0x7f03000c;
-        public static final int appointment_layout=0x7f03000d;
-        public static final int book_list_layout=0x7f03000e;
-        public static final int message_layout=0x7f03000f;
+        public static final int appointment_layout=0x7f03000c;
+        public static final int book_list_layout=0x7f03000d;
+        public static final int message_layout=0x7f03000e;
     }
     public static final class menu {
         public static final int activity_add_book=0x7f070000;

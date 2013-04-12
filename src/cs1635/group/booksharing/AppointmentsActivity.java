@@ -13,6 +13,7 @@ public class AppointmentsActivity extends ListActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_buy);
 		
 		AppointmentData[] apt = new AppointmentData[2];
 		apt[0] = new AppointmentData("John Smith", "01/01/13", "00:00", "Hillman");
@@ -43,5 +44,10 @@ public class AppointmentsActivity extends ListActivity {
 	public void onListItemClick(ListView l, View v, int position, long id) {
 		Intent intent = new Intent(this, AppointmentDetailsActivity.class);
 		startActivity(intent);
+	}
+	
+	// Called on Home button press
+	public void goHome(View view) {
+		finish();
 	}
 }
