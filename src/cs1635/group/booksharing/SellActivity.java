@@ -67,4 +67,7 @@ public class SellActivity extends ListActivity {
 		startActivity(intent);
 	}
 
+	public void goHome(View v) {
+		finish();
+	}
 }

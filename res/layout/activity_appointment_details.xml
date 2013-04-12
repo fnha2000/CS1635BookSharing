@@ -23,7 +23,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="0.2"
-        android:text="@string/sample_address"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Button
@@ -52,7 +51,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="0.2"
-        android:text="@string/sample_date"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <FrameLayout
@@ -74,7 +72,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="0.2"
-        android:text="@string/sample_time"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <FrameLayout
@@ -96,7 +93,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="0.2"
-        android:text="@string/sample_appointment_message"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <FrameLayout

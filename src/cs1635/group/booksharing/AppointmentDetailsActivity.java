@@ -1,10 +1,13 @@
 package cs1635.group.booksharing;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
 public class AppointmentDetailsActivity extends FragmentActivity {
 
@@ -12,6 +15,15 @@ public class AppointmentDetailsActivity extends FragmentActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_appointment_details);
+		Intent intent = getIntent();
+		TextView locView = (TextView)findViewById(R.id.appointment_address);
+		TextView dateView = (TextView)findViewById(R.id.appointment_date);
+		TextView timeView = (TextView)findViewById(R.id.appointment_time);
+		TextView msgView = (TextView)findViewById(R.id.appointment_message);
+		locView.setText(intent.getStringExtra("Location"));
+		dateView.setText(intent.getStringExtra("Date"));
+		timeView.setText(intent.getStringExtra("Time"));
+		msgView.setText(intent.getStringExtra("Message"));
 	}
 
 	@Override
@@ -19,6 +31,16 @@ public class AppointmentDetailsActivity extends FragmentActivity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.appointment_details, menu);
 		return true;
+	}
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case android.R.id.home:
+			finish();
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
 	}
 	
 	// Called on "View map" button click.

@@ -110,7 +110,7 @@
         </activity>
         <activity
             android:name="cs1635.group.booksharing.AppointmentDetailsActivity"
-            android:label="@string/title_activity_appointment_details" >
+            android:label="@string/title_activity_appointment_details" android:parentActivityName="cs1635.group.booksharing.AppointmentsActivity">
         </activity>
         <activity
             android:name="cs1635.group.booksharing.MessageReplyActivity"
