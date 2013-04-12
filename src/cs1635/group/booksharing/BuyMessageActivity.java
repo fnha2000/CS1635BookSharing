@@ -84,7 +84,7 @@ public class BuyMessageActivity extends FragmentActivity {
 	// Called on Send button click
 	public void goToSendConfirmation(View view) {
 		DialogFragment dialog = new SendConfirmationDialogFragment();
-		dialog.show(getSupportFragmentManager(), "TooShortDialogFragment");
+		dialog.show(getSupportFragmentManager(), "SendConfirmationDialogFragment");
 	}
 
 }

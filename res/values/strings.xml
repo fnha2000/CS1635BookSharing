@@ -72,6 +72,7 @@
     <string name="scan_button">Scan barcode</string>
     <string name="title_activity_message_detail">Message Details</string>
     <string name="send_confirmation_dialog">Your message has been sent.</string>
+    <string name="confirm_post_dialog">Your book has been posted.</string>
     
 
 </resources>

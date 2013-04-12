@@ -73,17 +73,16 @@ public final class R {
         public static final int activity_buy=0x7f030001;
         public static final int activity_buy_book_details=0x7f030002;
         public static final int activity_buy_message=0x7f030003;
-        public static final int activity_confirm_post=0x7f030004;
-        public static final int activity_help=0x7f030005;
-        public static final int activity_home=0x7f030006;
-        public static final int activity_main=0x7f030007;
-        public static final int activity_message_detail=0x7f030008;
-        public static final int activity_profile=0x7f030009;
-        public static final int activity_sell=0x7f03000a;
-        public static final int activity_test=0x7f03000b;
-        public static final int appointment_layout=0x7f03000c;
-        public static final int book_list_layout=0x7f03000d;
-        public static final int message_layout=0x7f03000e;
+        public static final int activity_help=0x7f030004;
+        public static final int activity_home=0x7f030005;
+        public static final int activity_main=0x7f030006;
+        public static final int activity_message_detail=0x7f030007;
+        public static final int activity_profile=0x7f030008;
+        public static final int activity_sell=0x7f030009;
+        public static final int activity_test=0x7f03000a;
+        public static final int appointment_layout=0x7f03000b;
+        public static final int book_list_layout=0x7f03000c;
+        public static final int message_layout=0x7f03000d;
     }
     public static final class menu {
         public static final int activity_add_book=0x7f060000;
@@ -125,6 +124,7 @@ public final class R {
         public static final int buy_search_hint=0x7f040004;
         public static final int buy_sell=0x7f04003b;
         public static final int confirm_post=0x7f040028;
+        public static final int confirm_post_dialog=0x7f040048;
         public static final int currently_selling=0x7f040020;
         public static final int date=0x7f040042;
         public static final int edit=0x7f040029;

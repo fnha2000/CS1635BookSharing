@@ -161,6 +161,7 @@
             android:id="@+id/button_home"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="0.20"
             android:onClick="goHome"
             android:text="@string/home" />
 
@@ -174,8 +175,10 @@
             android:id="@+id/button_buy"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="0.20"
             android:onClick="post"
             android:text="@string/post" />
+
     </LinearLayout>
 
 </LinearLayout>
