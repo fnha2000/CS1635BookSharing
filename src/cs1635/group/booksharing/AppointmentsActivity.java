@@ -1,15 +1,19 @@
 package cs1635.group.booksharing;
 
 import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ListView;
 
 public class AppointmentsActivity extends ListActivity {
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_buy);
 		
 		AppointmentData[] apt = new AppointmentData[2];
 		apt[0] = new AppointmentData("John Smith", "01/01/13", "00:00", "Hillman");
@@ -33,5 +37,17 @@ public class AppointmentsActivity extends ListActivity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+	
+	// Called on list item click. Opens hardcoded sample appointment.
+	@Override
+	public void onListItemClick(ListView l, View v, int position, long id) {
+		Intent intent = new Intent(this, AppointmentDetailsActivity.class);
+		startActivity(intent);
+	}
+	
+	// Called on Home button press
+	public void goHome(View view) {
+		finish();
 	}
 }

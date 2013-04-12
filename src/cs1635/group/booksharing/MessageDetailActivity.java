@@ -55,6 +55,7 @@ public class MessageDetailActivity extends Activity {
 	}
 	
 	public void reply(View v) {
-		
+		Intent intent = new Intent(this, MessageReplyActivity.class);
+		startActivity(intent);
 	}
 }

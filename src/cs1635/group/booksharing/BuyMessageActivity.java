@@ -1,9 +1,10 @@
 package cs1635.group.booksharing;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.DialogFragment;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.NavUtils;
 import android.view.KeyEvent;
 import android.view.Menu;
@@ -15,7 +16,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
 
-public class BuyMessageActivity extends Activity {
+public class BuyMessageActivity extends FragmentActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -80,10 +81,10 @@ public class BuyMessageActivity extends Activity {
 		startActivity(intent);
 	}
 	
-	// Called on Buy button click
+	// Called on Send button click
 	public void goToSendConfirmation(View view) {
-		Intent intent = new Intent(this, SendConfirmationActivity.class);
-		startActivity(intent);
+		DialogFragment dialog = new SendConfirmationDialogFragment();
+		dialog.show(getSupportFragmentManager(), "SendConfirmationDialogFragment");
 	}
 
 }

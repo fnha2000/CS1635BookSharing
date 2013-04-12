@@ -9,7 +9,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -71,12 +70,6 @@ public class BuyActivity extends ListActivity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
-	}
-	
-	// Called on Buy button press
-	public void goToButton(View view) {
-		Intent intent = new Intent(this, BuyBookDetailsActivity.class);
-		startActivity(intent);
 	}
 
 	// Called on Home button press

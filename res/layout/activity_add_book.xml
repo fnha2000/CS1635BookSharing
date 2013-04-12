@@ -2,8 +2,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddBookActivity"
-    android:orientation="vertical" >
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".AddBookActivity" >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -161,6 +162,7 @@
             android:id="@+id/button_home"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="0.20"
             android:onClick="goHome"
             android:text="@string/home" />
 
@@ -174,8 +176,10 @@
             android:id="@+id/button_buy"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="0.20"
             android:onClick="post"
             android:text="@string/post" />
+
     </LinearLayout>
 
 </LinearLayout>

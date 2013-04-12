@@ -95,7 +95,8 @@
         <activity
             android:name="cs1635.group.booksharing.ProfileActivity"
             android:label="@string/title_activity_profile"
-            android:screenOrientation="portrait" android:parentActivityName="cs1635.group.booksharing.Home">
+            android:parentActivityName="cs1635.group.booksharing.Home"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="cs1635.group.booksharing.TestActivity"
@@ -104,7 +105,16 @@
         </activity>
         <activity
             android:name="cs1635.group.booksharing.MessageDetailActivity"
-            android:label="@string/title_activity_message_detail" android:parentActivityName="cs1635.group.booksharing.MessageActivity">
+            android:label="@string/title_activity_message_detail"
+            android:parentActivityName="cs1635.group.booksharing.MessageActivity" >
+        </activity>
+        <activity
+            android:name="cs1635.group.booksharing.AppointmentDetailsActivity"
+            android:label="@string/title_activity_appointment_details" >
+        </activity>
+        <activity
+            android:name="cs1635.group.booksharing.MessageReplyActivity"
+            android:label="@string/title_activity_message_reply" >
         </activity>
     </application>
 
