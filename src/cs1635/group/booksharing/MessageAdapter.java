@@ -35,7 +35,11 @@ public class MessageAdapter extends ArrayAdapter<MessageData> {
 		senderText.setText(curMessage.sender);
 		dateText.setText(curMessage.date);
 		timeText.setText(curMessage.time);
-		contentText.setText(curMessage.message);
+		String message = curMessage.message;
+		if (message.length() > 40) {
+			message = message.substring(0, 37) + "...";
+		}
+		contentText.setText(message);
 		return tweetView;
 	}
 }

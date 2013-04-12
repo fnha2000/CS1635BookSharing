@@ -81,8 +81,7 @@ public class BuyActivity extends ListActivity {
 
 	// Called on Home button press
 	public void goHome(View view) {
-		Intent intent = new Intent(this, Home.class);
-		startActivity(intent);
+		finish();
 	}
 	
 	// Called on Buy button press
