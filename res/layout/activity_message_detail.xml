@@ -6,81 +6,99 @@
     android:padding="10dp"
     tools:context=".MessageDetailActivity" >
 
-    <TextView android:id="@+id/msgdetail_fromLabel"
+    <TextView
+        android:id="@+id/msgdetail_fromLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_marginRight="5dp"
         android:layout_marginBottom="10dp"
+        android:layout_marginRight="5dp"
         android:text="@string/from"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
-    <TextView android:id="@+id/msgdetail_from"
+    <TextView
+        android:id="@+id/msgdetail_from"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@id/msgdetail_fromLabel"
         android:layout_toRightOf="@id/msgdetail_fromLabel"
         android:text="@string/sample_user"
         android:textAppearance="?android:attr/textAppearanceLarge" />
-    
-    <TextView android:id="@+id/msgdetail_dateLabel"
+
+    <TextView
+        android:id="@+id/msgdetail_dateLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/msgdetail_fromLabel"
         android:layout_alignParentLeft="true"
-        android:layout_marginRight="5dp"
+        android:layout_below="@id/msgdetail_fromLabel"
         android:layout_marginBottom="10dp"
+        android:layout_marginRight="5dp"
         android:text="@string/date"
         android:textAppearance="?android:attr/textAppearanceMedium" />
-    
-    <TextView android:id="@+id/msgdetail_date"
+
+    <TextView
+        android:id="@+id/msgdetail_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/msgdetail_fromLabel"
         android:layout_alignBottom="@id/msgdetail_dateLabel"
-        android:layout_toRightOf="@id/msgdetail_dateLabel"
+        android:layout_below="@id/msgdetail_fromLabel"
         android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/msgdetail_dateLabel"
         android:text="@string/sample_date"
         android:textAppearance="?android:attr/textAppearanceLarge" />
-    
-    <TextView android:id="@+id/msgdetail_time"
+
+    <TextView
+        android:id="@+id/msgdetail_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/msgdetail_fromLabel"
         android:layout_alignBottom="@id/msgdetail_date"
+        android:layout_below="@id/msgdetail_fromLabel"
         android:layout_toRightOf="@id/msgdetail_date"
         android:text="@string/sample_time"
         android:textAppearance="?android:attr/textAppearanceLarge" />
-    
-    <TextView android:id="@+id/msgdetail_content"
+
+    <TextView
+        android:id="@+id/msgdetail_content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/msgdetail_dateLabel"
         android:text="@string/sample_time"
         android:textAppearance="?android:attr/textAppearanceSmall" />
-    
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:text="@string/back"
-        android:onClick="goBack" />
-    
+        android:onClick="goBack"
+        android:text="@string/back" />
+
     <Button
+        android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        android:text="@string/button_delete"
-        android:onClick="deleteMsg" />
-    
+        android:onClick="deleteMsg"
+        android:text="@string/button_delete" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:text="@string/button_reply"
-        android:onClick="reply" />
+        android:layout_alignParentRight="true"
+        android:onClick="reply"
+        android:text="@string/button_reply" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="17dp"
+        android:text="@string/call_user"
+        android:onClick="callUser" />
 
 </RelativeLayout>

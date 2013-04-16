@@ -2,6 +2,7 @@ package cs1635.group.booksharing;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -56,6 +57,14 @@ public class MessageDetailActivity extends Activity {
 	
 	public void reply(View v) {
 		Intent intent = new Intent(this, MessageReplyActivity.class);
+		startActivity(intent);
+	}
+	
+	// Called on "Call user" button click. Places phone call to user.
+	public void callUser(View v) {
+		String phoneNumber = "555-555-5555";	// Hardcoded dummy phone number
+		String uri = "tel:" + phoneNumber;
+		Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse(uri));
 		startActivity(intent);
 	}
 }
