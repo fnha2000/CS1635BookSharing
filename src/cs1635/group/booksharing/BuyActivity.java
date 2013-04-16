@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -24,6 +25,7 @@ public class BuyActivity extends ListActivity {
 		setContentView(R.layout.activity_buy);
 
 		EditText searchField = (EditText) findViewById(R.id.search_field);
+		Button searchButton = (Button) findViewById(R.id.search_button);
 		
 		// This is for displaying dummy search results. We can replace it later with either a database query or
 				// data pulled from a text file. It only displays the title for now, because I haven't figured out how
@@ -52,7 +54,24 @@ public class BuyActivity extends ListActivity {
 		        		
 		        		return handled;
 		        	}
-		        });		
+		        });	
+				
+				searchButton.setOnEditorActionListener(new OnEditorActionListener() {
+		        	@Override
+		        	public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+		        		boolean handled = false;
+		       
+		        		// Populate the list with dummy data.
+		        		listView.setAdapter(adapter);
+		        		
+		        		// Hide the keyboard
+		        		InputMethodManager imm = (InputMethodManager) v.getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+	    				imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
+	        			handled = true;
+		        		
+		        		return handled;
+		        	}
+		        });
 	}
 
 	@Override
