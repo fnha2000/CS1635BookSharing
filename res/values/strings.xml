@@ -89,5 +89,6 @@
     <string name="appointment_canceled_dialog">Appointment canceled.</string>
     <string name="title_activity_message_reply">Reply Message</string>
     <string name="reply_hint">Enter your message here.</string>
+    <string name="call_user">Call user</string>
 
 </resources>

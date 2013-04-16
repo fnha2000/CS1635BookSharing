@@ -1,6 +1,7 @@
 package cs1635.group.booksharing;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentActivity;
@@ -59,6 +60,14 @@ public class AppointmentDetailsActivity extends FragmentActivity {
 	
 	public void goBack(View v) {
 		finish();
+	}
+	
+	// Called on "Call user" button click. Places phone call to user.
+	public void callUser(View v) {
+		String phoneNumber = "555-555-5555";	// Hardcoded dummy phone number
+		String uri = "tel:" + phoneNumber;
+		Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse(uri));
+		startActivity(intent);
 	}
 
 }

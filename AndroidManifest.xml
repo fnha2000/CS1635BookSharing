@@ -117,5 +117,7 @@
             android:label="@string/title_activity_message_reply" android:windowSoftInputMode="stateVisible|adjustResize" android:parentActivityName="cs1635.group.booksharing.MessageDetailActivity">
         </activity>
     </application>
+    
+    <uses-permission android:name="android.permission.CALL_PHONE" /> 
 
 </manifest>
