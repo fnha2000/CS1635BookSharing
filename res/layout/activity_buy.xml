@@ -6,21 +6,39 @@
     android:orientation="vertical"
     tools:context=".BuyActivity" >
 
-    <EditText
-        android:id="@+id/search_field"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/buy_search_hint"
-        android:imeActionLabel="@string/search_button"
-        android:imeOptions="actionSearch"
-        android:inputType="textNoSuggestions"
-        android:singleLine="true" />
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/search_field"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/buy_search_hint"
+            android:imeActionLabel="@string/search_button"
+            android:imeOptions="actionSearch"
+            android:inputType="textNoSuggestions"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/search_button"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buy_search_hint"
+            android:onClick="actionSearch" />
+
+    </LinearLayout>
 
     <ListView
         android:id="@android:id/list"
         android:layout_width="match_parent"
-        android:layout_height="359dp"
+        android:layout_height="0dip"
         android:layout_weight="0.40" >
     </ListView>
 
