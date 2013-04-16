@@ -168,3 +168,5 @@ pip-log.txt
 *.class
 *.dex
 *.ap_
+*.apk
+*.jar
