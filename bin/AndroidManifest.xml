@@ -42,7 +42,7 @@
             android:name="cs1635.group.booksharing.BuyMessageActivity"
             android:label="@string/title_activity_buy_message"
             android:parentActivityName="cs1635.group.booksharing.BuyBookDetailsActivity"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible|adjustResize">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="cs1635.group.booksharing.BuyBookDetailsActivity" />

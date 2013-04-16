@@ -1,17 +1,16 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:gravity="center_horizontal"
-    android:orientation="vertical"
     tools:context=".BuyMessageActivity" >
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
         android:text="@string/buy_message_instructions"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -19,18 +18,19 @@
         android:id="@+id/editText1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.35"
+        android:layout_below="@id/textView1"
         android:ems="10"
         android:hint="@string/buy_message_hint"
         android:imeOptions="actionDone"
-        android:inputType="text" >
+        android:inputType="textShortMessage|textMultiLine" >
 
         <requestFocus />
     </EditText>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
 
         <Button
             android:id="@+id/button_home"
@@ -39,12 +39,6 @@
             android:layout_weight="0.35"
             android:onClick="goHome"
             android:text="@string/home" />
-
-        <FrameLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1" >
-        </FrameLayout>
 
         <Button
             android:id="@+id/button_send"
@@ -56,4 +50,4 @@
 
     </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>
