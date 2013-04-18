@@ -62,6 +62,11 @@ public class AppointmentDetailsActivity extends FragmentActivity {
 		finish();
 	}
 	
+	public void goMessage(View v) {
+		Intent intent = new Intent(this, BuyMessageActivity.class);
+		startActivity(intent);
+	}
+	
 	// Called on "Call user" button click. Places phone call to user.
 	public void callUser(View v) {
 		String phoneNumber = "555-555-5555";	// Hardcoded dummy phone number

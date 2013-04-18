@@ -14,7 +14,7 @@ public class MessagesActivity extends ListActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_buy);
+		setContentView(R.layout.basic_layout);
 		
 		msg = new MessageData[2];
 		msg[0] = new MessageData("John Smith", "01/01/13", "00:00", "I'd like to buy your Programming for Android textbook. Do you still have it?");

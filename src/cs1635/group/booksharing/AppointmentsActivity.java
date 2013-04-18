@@ -14,7 +14,7 @@ public class AppointmentsActivity extends ListActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_buy);
+		setContentView(R.layout.basic_layout);
 		
 		apt = new AppointmentData[3];
 		apt[0] = new AppointmentData("John Smith", "01/01/13", "00:00", "Hillman Library", "Can we meet at the Hillman Library?");

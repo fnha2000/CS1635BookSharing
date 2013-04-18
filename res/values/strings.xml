@@ -15,6 +15,7 @@
     <string name="buy">Buy</string>
     <string name="back">Back</string>
     <string name="home">Home</string>
+    <string name="button_message">Message</string>
     <string name="buy_message_instructions">Use this form to contact the seller.</string>
     <string name="send">Send</string>
     <string name="sample_title">Programming Android</string>
@@ -82,11 +83,13 @@
     <string name="sample_address">123 Main St., Pittsburgh, PA</string>
     <string name="sample_appointment_message">Great, let\'s meet at the Starbucks on Main St. at 10 tomorrow morning.</string>
     <string name="view_map">View map</string>
-    <string name="cancel_appointment">Cancel appointment</string>
+    <string name="cancel_appointment">Cancel</string>
     <string name="confirm_cancel_appointment_dialog">Cancel appointment?</string>
+    <string name="confirm_delete_message_dialog">Delete message?</string>
     <string name="yes">Yes</string>
     <string name="never_mind">Never mind</string>
     <string name="appointment_canceled_dialog">Appointment canceled.</string>
+    <string name="message_deleted_dialog">Message deleted.</string>
     <string name="title_activity_message_reply">Reply Message</string>
     <string name="reply_hint">Enter your message here.</string>
     <string name="call_user">Call user</string>

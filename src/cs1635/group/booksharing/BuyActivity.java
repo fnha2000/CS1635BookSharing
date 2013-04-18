@@ -96,6 +96,10 @@ public class BuyActivity extends ListActivity {
 		finish();
 	}
 	
+	public void goSearch(View view) {
+		//need to implement this
+	}
+	
 	// Called on Buy button press
 	// This is just a hardcoded dummy method to go to the details for the sample book.
 	// We need to figure out how to go to the selected book for real data.

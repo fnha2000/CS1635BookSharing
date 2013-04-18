@@ -4,12 +4,14 @@ import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.app.DialogFragment;
+import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
-public class MessageDetailActivity extends Activity {
+public class MessageDetailActivity extends FragmentActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -52,7 +54,9 @@ public class MessageDetailActivity extends Activity {
 	}
 	
 	public void deleteMsg(View v) {
-		
+		// Display confirmation dialog
+		DialogFragment dialog = new ConfirmDeleteMessageDialogFragment();
+		dialog.show(getSupportFragmentManager(), "ConfirmDeleteMessageDialogFragment");
 	}
 	
 	public void reply(View v) {
