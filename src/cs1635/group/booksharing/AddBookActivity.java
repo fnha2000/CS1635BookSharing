@@ -9,6 +9,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.google.zxing.integration.android.IntentIntegrator;
+import com.google.zxing.integration.android.IntentResult;
+
 public class AddBookActivity extends FragmentActivity {
 
 	@Override
@@ -51,12 +54,21 @@ public class AddBookActivity extends FragmentActivity {
 	
 	// Called when "Add photo" button is pressed
 	public void addPhoto(View view) {
-		// Add code here.
+		// TODO: Add code here.
 	}
 	
-	// Called when "Scan barcode"
+	// Called when "Scan barcode" button is clicked
 	public void scan(View view) {
-		// Add code here.
+		IntentIntegrator integrator = new IntentIntegrator(this);
+		integrator.initiateScan();
+	}
+	
+	// Handles result of barcode scan
+	public void onActivityResult(int requestCode, int resultCode, Intent intent) {
+		IntentResult scanResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
+		if (scanResult != null) {
+			// TODO: Handle scan result
+		}
 	}
 
 	@Override
