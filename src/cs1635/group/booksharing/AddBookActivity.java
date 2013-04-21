@@ -80,6 +80,7 @@ public class AddBookActivity extends FragmentActivity {
 		if (activeNetworkInfo == null || !activeNetworkInfo.isConnected()) {
 			DialogFragment dialog = new NoNetworkConnectionDialogFragment();
 			dialog.show(getSupportFragmentManager(), "NoNetworkConnectionDialogFragment");
+			return;
 		}
 		
 		// Scan barcode
@@ -92,7 +93,6 @@ public class AddBookActivity extends FragmentActivity {
 		IntentResult scanResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
 		if (scanResult != null) {
 			String format = scanResult.getFormatName();
-			System.out.println("Format recorded.");
 			// Make sure barcode is proper format. (Does this cover all ISBN barcodes?)
 			if (format.equals("EAN_13")) {
 				try {
@@ -107,7 +107,6 @@ public class AddBookActivity extends FragmentActivity {
 			else {
 				// TODO: Fix crash here.
 				/*
-				System.out.println("About to display WrongFormatDialogFragment.");
 				// Display error message
 				DialogFragment dialog = new WrongFormatDialogFragment();
 				dialog.show(getSupportFragmentManager(), "WrongFormatDialogFragment");
