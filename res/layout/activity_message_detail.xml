@@ -108,4 +108,15 @@
         android:onClick="callUser"
         android:text="@string/call_user" />
 
+    <Button
+        android:id="@+id/button_create_appointment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_call"
+        android:layout_alignLeft="@+id/button_call"
+        android:layout_alignRight="@+id/button_call"
+        android:layout_marginBottom="16dp"
+        android:text="@string/create_appointment_button"
+        android:onClick="createAppointment" />
+
 </RelativeLayout>
