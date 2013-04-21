@@ -233,6 +233,7 @@ public final class R {
         public static final int title_hint=0x7f050024;
         public static final int view=0x7f050042;
         public static final int view_map=0x7f050051;
+        public static final int wrong_format_dialog=0x7f05005f;
         public static final int yes=0x7f050055;
     }
     public static final class style {

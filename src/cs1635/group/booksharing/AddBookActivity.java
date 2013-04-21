@@ -91,16 +91,35 @@ public class AddBookActivity extends FragmentActivity {
 	public void onActivityResult(int requestCode, int resultCode, Intent intent) {
 		IntentResult scanResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
 		if (scanResult != null) {
-			try {
-				isbn = scanResult.getContents();
-				URL url = new URL(URL_START + isbn);
-				new BookDataTask().execute(url);
-			} catch (Exception ex) {
-				System.out.println("Exception caught while attempting to start BookInfoTask: " + ex);
+			String format = scanResult.getFormatName();
+			System.out.println("Format recorded.");
+			// Make sure barcode is proper format. (Does this cover all ISBN barcodes?)
+			if (format.equals("EAN_13")) {
+				try {
+					// Download data and fill out fields
+					isbn = scanResult.getContents();
+					URL url = new URL(URL_START + isbn);
+					new BookDataTask().execute(url);
+				} catch (Exception ex) {
+					System.out.println("Exception caught while attempting to start BookInfoTask: " + ex);
+				}
+			}
+			else {
+				// TODO: Fix crash here.
+				/*
+				System.out.println("About to display WrongFormatDialogFragment.");
+				// Display error message
+				DialogFragment dialog = new WrongFormatDialogFragment();
+				dialog.show(getSupportFragmentManager(), "WrongFormatDialogFragment");
+				*/
 			}
 		} else {
+			// TODO: See if this causes a crash.
+			/*
+			// Display error message
 			DialogFragment dialog = new ScanErrorDialogFragment();
 			dialog.show(getSupportFragmentManager(), "ScanErrorDialogFragment");
+			*/
 		}
 	}
 	
