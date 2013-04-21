@@ -1,6 +1,5 @@
 package cs1635.group.booksharing;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -69,6 +68,12 @@ public class MessageDetailActivity extends FragmentActivity {
 		String phoneNumber = "555-555-5555";	// Hardcoded dummy phone number
 		String uri = "tel:" + phoneNumber;
 		Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse(uri));
+		startActivity(intent);
+	}
+	
+	// Called on "Create appointment" button click.
+	public void createAppointment(View v) {
+		Intent intent = new Intent(this, CreateAppointmentActivity.class);
 		startActivity(intent);
 	}
 }

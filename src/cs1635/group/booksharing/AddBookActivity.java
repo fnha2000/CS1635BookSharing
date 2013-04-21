@@ -10,6 +10,10 @@ import org.xmlpull.v1.XmlPullParserException;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.hardware.Camera;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
@@ -20,7 +24,10 @@ import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
@@ -29,6 +36,8 @@ public class AddBookActivity extends FragmentActivity {
 	final String URL_START = "http://isbndb.com/api/books.xml?access_key=JBWC5O6E&results=subjects&index1=isbn&value1=";
 	String isbn;
 	BookDBSource bookSrc;
+	Camera camera;
+	int camRequest = 2;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -96,6 +105,8 @@ public class AddBookActivity extends FragmentActivity {
 	// Called when "Add photo" button is pressed
 	public void addPhoto(View view) {
 		// TODO: Add code here.
+		Intent cameraIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+        startActivityForResult(cameraIntent, camRequest);
 	}
 	
 	// Called when "Scan barcode" button is clicked
@@ -116,6 +127,15 @@ public class AddBookActivity extends FragmentActivity {
 	
 	// Handles result of barcode scan
 	public void onActivityResult(int requestCode, int resultCode, Intent intent) {
+		super.onActivityResult(requestCode, resultCode, intent);
+		if(requestCode == camRequest){
+			Bitmap thumbnail = (Bitmap) intent.getExtras().get("data");
+	        Button image =(Button) findViewById(R.id.button_add_photo);
+	        Drawable d = new BitmapDrawable(getResources(),thumbnail);
+	        image.setBackground(d);
+	        image.setText("");
+		}
+		
 		IntentResult scanResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
 		if (scanResult != null) {
 			String format = scanResult.getFormatName();
