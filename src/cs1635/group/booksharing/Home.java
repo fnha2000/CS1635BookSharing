@@ -17,6 +17,7 @@ public class Home extends Activity {
 	ImageButton sell;
 	ImageButton messages;
 	ImageButton appointments;
+	static String currentUser = "testUser";
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

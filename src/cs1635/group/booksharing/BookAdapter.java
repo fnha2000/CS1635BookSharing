@@ -37,4 +37,8 @@ public class BookAdapter extends ArrayAdapter<BookData> {
 		
 		return listView;
 	}
+
+	public void addBooks(BookData[] books) {
+		this.books = books;
+	}
 }

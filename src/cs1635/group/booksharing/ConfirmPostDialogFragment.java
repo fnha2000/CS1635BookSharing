@@ -11,13 +11,14 @@ public class ConfirmPostDialogFragment extends DialogFragment {
 	public Dialog onCreateDialog(Bundle savedInstanceState) {
 		AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 		builder.setMessage(R.string.confirm_post_dialog);
-		builder.setPositiveButton(R.string.home, new DialogInterface.OnClickListener() {
-			public void onClick(DialogInterface dialog, int id) {
-				// Go to home screen.
-				Intent intent = new Intent(getActivity(), Home.class);
-				startActivity(intent);
-			}
-		});
+//		builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+//			public void onClick(DialogInterface dialog, int id) {
+//				// Go to home screen.
+//				Intent intent = new Intent(getActivity(), Home.class);
+//				startActivity(intent);
+//			}
+//		});
+		builder.setPositiveButton(R.string.ok, null);
 		return builder.create();
 	}
 }

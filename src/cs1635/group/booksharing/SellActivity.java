@@ -1,5 +1,7 @@
 package cs1635.group.booksharing;
 
+import java.util.List;
+
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,22 +11,34 @@ import android.view.View;
 import android.widget.ListView;
 
 public class SellActivity extends ListActivity {
+	BookAdapter adapter;
+	BookDBSource bookSrc;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_sell);
 		
-		// Add dummy data to list.
-		BookData[] dummyResultsArray = new BookData[3];
-		dummyResultsArray[0] = new BookData("Programming Android", "$25.00");
-		dummyResultsArray[1] = new BookData("War and Peace", "$8.50");
-		dummyResultsArray[2] = new BookData("The Iliad", "$12.00");
+		bookSrc = new BookDBSource(this);
+	}
+	
+	@Override
+	protected void onStart() {
+		super.onStart();
+		bookSrc.open();
+		List<BookData> bookList = bookSrc.getMyBooks(Home.currentUser);
+		BookData[] books = (BookData[])bookList.toArray(new BookData[bookList.size()]);
 		
-		final BookAdapter adapter = new BookAdapter(this, android.R.layout.simple_list_item_1, dummyResultsArray);
-		final ListView listView = (ListView) findViewById(android.R.id.list);
+		adapter = new BookAdapter(this, android.R.layout.simple_list_item_1, books);
+		ListView listView = (ListView) findViewById(android.R.id.list);
 		
 		listView.setAdapter(adapter);
+	}
+	
+	@Override
+	protected void onStop() {
+		super.onStop();
+		bookSrc.close();
 	}
 
 	@Override

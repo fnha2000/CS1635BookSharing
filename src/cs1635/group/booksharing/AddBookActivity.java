@@ -28,11 +28,25 @@ import com.google.zxing.integration.android.IntentResult;
 public class AddBookActivity extends FragmentActivity {
 	final String URL_START = "http://isbndb.com/api/books.xml?access_key=JBWC5O6E&results=subjects&index1=isbn&value1=";
 	String isbn;
+	BookDBSource bookSrc;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_add_book);
+		bookSrc = new BookDBSource(this);
+	}
+	
+	@Override
+	protected void onStart() {
+		super.onStart();
+		bookSrc.open();
+	}
+	
+	@Override
+	protected void onStop() {
+		super.onStop();
+		bookSrc.close();
 	}
 
 	@Override
@@ -63,8 +77,20 @@ public class AddBookActivity extends FragmentActivity {
 	
 	// Called when "Post" button is pressed
 	public void post(View view) {
+		EditText price = (EditText)findViewById(R.id.editText5);
+		EditText isbn = (EditText)findViewById(R.id.editText_addBook_isbn);
+		EditText title = (EditText)findViewById(R.id.editText_addBook_title);
+		EditText author = (EditText)findViewById(R.id.editText_addBook_author);
+		EditText subject = (EditText)findViewById(R.id.editText_addBook_subject);
+		bookSrc.addBook(isbn.getText().toString(), title.getText().toString(),
+				author.getText().toString(), subject.getText().toString(),
+				price.getText().toString(), Home.currentUser);
 		DialogFragment dialog = new ConfirmPostDialogFragment();
 		dialog.show(getSupportFragmentManager(), "ConfirmPostDialogFragment");
+		Intent intent = new Intent();
+		intent.putExtra("action", "Home");
+		setResult(0, intent);
+		finish();
 	}
 	
 	// Called when "Add photo" button is pressed
