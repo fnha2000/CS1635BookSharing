@@ -93,5 +93,8 @@
     <string name="title_activity_message_reply">Reply Message</string>
     <string name="reply_hint">Enter your message here.</string>
     <string name="call_user">Call user</string>
+    <string name="no_connection_dialog">You must be connected to the Internet to use the barcode scanner.</string>
+    <string name="ok">OK</string>
+    <string name="scan_error_dialog">Sorry, an error has occurred. Please try again.</string>
 
 </resources>
