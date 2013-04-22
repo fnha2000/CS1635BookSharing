@@ -104,5 +104,6 @@
     <string name="create_appointment_book_hint">Enter book title</string>
     <string name="create_appointment_price_hint">Enter price</string>
     <string name="create_appointment_confirmation_dialog">Appointment created.</string>
+    <string name="title_activity_appointment_map">AppointmentMapActivity</string>
 
 </resources>

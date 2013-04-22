@@ -1,6 +1,7 @@
 package cs1635.group.booksharing;
 
 import android.content.Intent;
+
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
@@ -44,10 +45,10 @@ public class AppointmentDetailsActivity extends FragmentActivity {
 		return super.onOptionsItemSelected(item);
 	}
 	
-	// Called on "View map" button click.
-	// Currently non-functional. Should launch map displaying appointment location.
+	// Called on "View map" button click. Launches a map displaying the appointment location.
 	public void viewMap(View view) {
-		
+		Intent intent = new Intent(this, AppointmentMapActivity.class);
+		startActivity(intent);
 	}
 	
 	// Called on "Cancel appointment" button click.
