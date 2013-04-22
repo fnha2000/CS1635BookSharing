@@ -77,8 +77,24 @@ public class BuyActivity extends ListActivity implements OnEditorActionListener 
 		finish();
 	}
 	
-	public void goSearch(View view) {
+	public boolean goSearch(View view) {
 		//need to implement this
+		boolean handled = false;
+		ListView listView = (ListView) findViewById(android.R.id.list);
+		
+		EditText queryText = (EditText)findViewById(R.id.search_field);
+		List<BookData> bookList = bookSrc.queryBooks(queryText.getText().toString());
+		BookData[] books = (BookData[])bookList.toArray(new BookData[bookList.size()]);
+		adapter.clear();
+		adapter.addBooks(books);
+		listView.setAdapter(adapter);
+		
+		// Hide the keyboard
+		InputMethodManager imm = (InputMethodManager) view.getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+		imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+		handled = true;
+			
+		return handled;
 	}
 	
 	// Called on Buy button press

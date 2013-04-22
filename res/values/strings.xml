@@ -15,6 +15,10 @@
     <string name="buy">Buy</string>
     <string name="back">Back</string>
     <string name="home">Home</string>
+    <string name="help_msg_appt">To view messages and appointments press the correspoding icon at the homescreen.  In each of these a list of messages and appointments will show up in which you can select the desired message or appointment to gain more info.  From messages you can delete the message, create an appointment, reply, or call the sender.  From Appointments you can view a map of the meeting location, send a message to the user, cancel the appointment, or call the user.</string>
+    <string name="help_sell">To sell a book press the sell icon at the homescreen.  Press the add book button and add a photo to show condition.  You may scan the barcode of the book and it will auto fill the form for you.  Select a desired price and press post.</string>
+    <string name="help_buy">To buy a book press the buy icon at the homescreen and in the search bar type in the name of the desired book.  A list will pop up with all books matching that name. To get more information about the book and buy it select the desired book from the list.</string>
+    <string name="construction">This Page is Under Construction</string>
     <string name="button_message">Message</string>
     <string name="buy_message_instructions">Use this form to contact the seller.</string>
     <string name="send">Send</string>
