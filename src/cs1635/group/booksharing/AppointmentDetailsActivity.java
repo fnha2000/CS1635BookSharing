@@ -47,8 +47,11 @@ public class AppointmentDetailsActivity extends FragmentActivity {
 	
 	// Called on "View map" button click. Launches a map displaying the appointment location.
 	public void viewMap(View view) {
+		// Commented out due to map problems. See report for details.
+		/*
 		Intent intent = new Intent(this, AppointmentMapActivity.class);
 		startActivity(intent);
+		*/
 	}
 	
 	// Called on "Cancel appointment" button click.
