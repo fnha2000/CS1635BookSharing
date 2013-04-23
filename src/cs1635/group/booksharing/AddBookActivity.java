@@ -138,8 +138,13 @@ public class AddBookActivity extends FragmentActivity {
 		
 		IntentResult scanResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
 		if (scanResult != null) {
-			String format = scanResult.getFormatName();
+			// If user clicked back button, do nothing.
+			if (scanResult.getContents() == null) {
+				return;
+			}
+			
 			// Make sure barcode is proper format. (Does this cover all ISBN barcodes?)
+			String format = scanResult.getFormatName();
 			if (format.equals("EAN_13")) {
 				try {
 					// Download data and fill out fields
@@ -152,19 +157,14 @@ public class AddBookActivity extends FragmentActivity {
 			}
 			else {
 				// TODO: Fix crash here.
-				/*
 				// Display error message
 				DialogFragment dialog = new WrongFormatDialogFragment();
 				dialog.show(getSupportFragmentManager(), "WrongFormatDialogFragment");
-				*/
 			}
 		} else {
-			// TODO: See if this causes a crash.
-			/*
 			// Display error message
 			DialogFragment dialog = new ScanErrorDialogFragment();
 			dialog.show(getSupportFragmentManager(), "ScanErrorDialogFragment");
-			*/
 		}
 	}
 	

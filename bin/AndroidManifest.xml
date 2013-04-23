@@ -142,14 +142,14 @@
             android:label="@string/title_activity_create_appointment" >
         </activity>
 
-        <meta-data
-            android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyAy6cFfy7JevsowmVKGVgWN7IqiYBFAhbc" />
-
         <activity
             android:name="cs1635.group.booksharing.AppointmentMapActivity"
             android:label="@string/title_activity_appointment_map" >
         </activity>
+        
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAy6cFfy7JevsowmVKGVgWN7IqiYBFAhbc" />
     </application>
 
 </manifest>

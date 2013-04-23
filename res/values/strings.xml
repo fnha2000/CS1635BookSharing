@@ -99,8 +99,8 @@
     <string name="call_user">Call user</string>
     <string name="no_connection_dialog">You must be connected to the Internet to use the barcode scanner.</string>
     <string name="ok">OK</string>
-    <string name="scan_error_dialog">Sorry, an error has occurred. Please try again.</string>
-    <string name="wrong_format_dialog">Error: Please scan the ISBN barcode found on the book\'s cover or jacket.</string>
+    <string name="scan_error_dialog">Error: Please try again.</string>
+    <string name="wrong_format_dialog">Error: Not an ISBN.</string>
     <string name="create_appointment_button">Create appointment</string>
     <string name="title_activity_create_appointment">CreateAppointmentActivity</string>
     <string name="book">"Book: "</string>
