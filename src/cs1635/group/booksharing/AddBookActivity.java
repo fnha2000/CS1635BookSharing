@@ -8,6 +8,7 @@ import java.net.URL;
 import org.xml.sax.InputSource;
 import org.xmlpull.v1.XmlPullParserException;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -125,9 +126,15 @@ public class AddBookActivity extends FragmentActivity {
 		integrator.initiateScan();
 	}
 	
-	// Handles result of barcode scan
+	// Handles result of barcode scan and addPhoto() function
 	public void onActivityResult(int requestCode, int resultCode, Intent intent) {
 		super.onActivityResult(requestCode, resultCode, intent);
+		
+		// Return if user clicked back button.
+		if (resultCode == Activity.RESULT_CANCELED) {
+			return;
+		}
+		
 		if(requestCode == camRequest){
 			Bitmap thumbnail = (Bitmap) intent.getExtras().get("data");
 	        Button image =(Button) findViewById(R.id.button_add_photo);
