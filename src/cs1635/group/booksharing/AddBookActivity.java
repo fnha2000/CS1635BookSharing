@@ -126,7 +126,7 @@ public class AddBookActivity extends FragmentActivity {
 		integrator.initiateScan();
 	}
 	
-	// Handles result of barcode scan and addPhoto() function
+	// Handles result of barcode scan and addPhoto function
 	public void onActivityResult(int requestCode, int resultCode, Intent intent) {
 		super.onActivityResult(requestCode, resultCode, intent);
 		
@@ -163,7 +163,6 @@ public class AddBookActivity extends FragmentActivity {
 				}
 			}
 			else {
-				// TODO: Fix crash here.
 				// Display error message
 				DialogFragment dialog = new WrongFormatDialogFragment();
 				dialog.show(getSupportFragmentManager(), "WrongFormatDialogFragment");
@@ -192,9 +191,17 @@ public class AddBookActivity extends FragmentActivity {
 		protected void onPostExecute(cs1635.group.booksharing.BookDataXmlParser.BookData result) {
 			// Populate fields with book data
 			((EditText) findViewById(R.id.editText_addBook_isbn)).setText(isbn);
-			((EditText) findViewById(R.id.editText_addBook_title)).setText(result.title);
-			((EditText) findViewById(R.id.editText_addBook_author)).setText(result.author);
-			((EditText) findViewById(R.id.editText_addBook_subject)).setText(result.subject);
+			if (result.title != null) {
+				((EditText) findViewById(R.id.editText_addBook_title)).setText(result.title);
+			}
+			
+			if (result.author != null) {
+				((EditText) findViewById(R.id.editText_addBook_author)).setText(result.author);
+			}
+			
+			if (result.subject != null) {
+				((EditText) findViewById(R.id.editText_addBook_subject)).setText(result.subject);
+			}
 		}
 	}
 	
